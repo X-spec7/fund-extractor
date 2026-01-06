@@ -1,0 +1,214 @@
+Data Parser Mini Project Challenge - Current Understanding
+==========================================================
+
+1. Business Goal
+----------------
+
+Mutual funds publish periodic PDF reports (quarterly, semi-annual, annual), and each fund family (e.g., Hartford, GSAM, BlackRock) uses its own layout and formatting.
+
+The goal is to build a tool that can reliably extract structured data from the “Schedule of Investments” section of these PDFs for hundreds of different mutual funds, with minimal per-fund configuration effort.
+
+The extracted output should be machine-readable (JSON, CSV, or plain text) and suitable for downstream analytics or ingestion into other systems.
+
+
+2. Inputs and Outputs
+---------------------
+
+Inputs:
+- PDF reports for mutual funds, such as:
+  - Hartford Balanced Income Fund semi-annual report.
+  - GSAM fund reports.
+  - BlackRock fund reports.
+- Each PDF may have:
+  - Different page layouts, fonts, and headers.
+  - Tables that span multiple pages.
+  - Multi-column pages (e.g., two table blocks side by side).
+  - Noisy data such as footnotes, continuation headers, and small-print notes.
+
+Outputs:
+- For each PDF, structured data representing:
+  - Fund-level fields:
+    - Fund name.
+    - Report as-of date.
+  - A collection of holdings from the Schedule of Investments, where each holding has:
+    - Security name.
+    - Security type.
+    - Country (ISO3 code where possible, null if not available).
+    - Sector.
+    - Number of shares.
+    - Principal (for bonds or similar instruments).
+    - Market value.
+- Fields may be null if not present in the source report.
+
+
+3. Example Extraction
+---------------------
+
+From the Hartford Balanced Income Fund example:
+- Fund name: "The Hartford Balanced Income Fund".
+- Report date: "April 30, 2023".
+- From the Schedule of Investments, one holding might be:
+  - Security name: "JetBlue Airways Corp. 0.50% 04/01/2026".
+  - Security type: "Convertible Bonds".
+  - Sector: "Airlines".
+  - Country: null.
+  - Number of shares: null.
+  - Principal: "$1,499,000".
+  - Market value: "$1,167,870".
+
+This illustrates that:
+- Some fields (like principal and market value) are taken from numeric columns.
+- Other fields (security name, type, sector) may be present in header rows, sub-headers, or separate columns, and must be associated correctly with each line item.
+- Some fields (e.g., country, number of shares) may not be explicitly given and must remain null unless inferred.
+
+
+4. High-Level Solution Approach
+-------------------------------
+
+The proposed solution is a configurable pipeline with several layers:
+
+1) Ingestion Layer:
+   - Accept PDFs from local files or URLs.
+   - Use a PDF parsing library to extract text, tables, and layout metadata:
+     - Candidates: pdfplumber, pdfminer.six, or table extractors like camelot or tabula-py.
+
+2) Layout and Fund Detection:
+   - Detect which fund family / layout pattern a given PDF corresponds to, using:
+     - Heuristics (text patterns like fund name, sponsor (Hartford, GSAM, BlackRock), presence of specific headers).
+     - Optionally a lightweight classifier if needed.
+   - This determines which configuration (layout profile) to use for parsing.
+
+3) Fund-Specific Layout Profiles (Configuration-Driven):
+   - Instead of hardcoding extraction logic per fund, maintain per-fund configuration files (YAML/JSON) that define:
+     - How to locate the “Schedule of Investments” section:
+       - Header text patterns or regex.
+       - Expected page ranges or section boundaries.
+     - Table structure:
+       - Location of header rows and sub-headers.
+       - Column-to-field mappings (e.g., "Shares or Principal Amount" -> principal, "Market Value†" -> market_value).
+       - Rules for multi-column layouts (left/right tables on the same page).
+       - Rules for cross-page tables (propagating headers, continuing aggregations).
+     - Row handling:
+       - How to detect and merge multi-line security names.
+       - How to skip non-data rows (totals, footnotes, "continued" labels).
+   - Onboarding a new fund should mostly mean creating or editing one of these configuration files instead of writing new parser code.
+
+4) Extraction and Normalization:
+   - For the relevant pages/regions, normalize the PDF content into a structured intermediate format:
+     - Cells with text, row/column indices, and page/coordinate information.
+   - Using the fund’s layout profile:
+     - Identify the table region(s) that correspond to holdings.
+     - Interpret header rows to establish column semantics.
+     - Parse each row into the canonical schema:
+       - security_name
+       - security_type
+       - country_iso3
+       - sector
+       - shares
+       - principal
+       - market_value
+   - Implement logic to:
+     - Merge multi-line cells and rows.
+     - Carry forward context such as sector or security type that might be indicated by section headings instead of per row.
+
+5) AI/ML Assistance (Used Selectively):
+   - Use models only where rules and configurations are insufficient or too brittle, in order to control cost.
+   - Possible AI/ML use cases:
+     - Classify security type (e.g., equity, convertible bond, corporate bond) from the security description if not directly labeled.
+     - Map free-text sector names or issuer descriptions to a normalized sector taxonomy.
+     - Infer country and convert to ISO3 codes when needed.
+   - Use smaller, targeted models or prompt-based calls and cache the results for repeated securities to minimize expense.
+
+6) Validation and Review Layer:
+   - After extraction, perform validations such as:
+     - Type checks (numbers vs. text, currency formats).
+     - Consistency checks (no negative shares/values, reasonable ranges).
+     - Cross-checks against totals reported in the PDF (e.g., sum of market values by asset class or sector).
+   - Assign confidence scores to each field or row based on:
+     - Parsing method (direct table detection vs. OCR/heuristic).
+     - Use of AI inference vs. direct reading.
+   - Rows with low confidence or validation failures are flagged for manual review.
+   - Conceptual manual review UI:
+     - Side-by-side view: original PDF snippet (image) + parsed row/fields.
+     - Filters to show only low-confidence or error rows.
+     - Inline edit to correct values, with changes saved to the final export.
+
+
+5. Onboarding New Mutual Funds
+------------------------------
+
+Key requirement: onboarding new funds must be quick and require minimal code changes.
+
+The solution emphasizes:
+- Fund-specific layout profiles (configuration files) describing:
+  - How to locate Schedule of Investments.
+  - Table structure and header patterns.
+  - Column-to-field mappings.
+- A semi-automated onboarding workflow:
+  - A small tool or script that:
+    - Lets an analyst open a sample PDF.
+    - Identify the Schedule of Investments header and table.
+    - Mark which columns correspond to which fields via a UI or structured prompt.
+  - The tool generates an initial layout profile that can be refined and committed.
+
+For scaling to hundreds of funds:
+- Reuse common layout archetypes (e.g., shared designs across fund families).
+- Maintain a library of patterns (e.g., "2-column layout with continuation", "single wide table across pages").
+- Version control all profiles and provide regression tests with sample PDFs.
+
+
+6. Performance and Cost Considerations
+--------------------------------------
+
+Performance and cost are handled by:
+- Relying primarily on deterministic PDF parsing plus configuration-driven rules.
+- Limiting AI/ML usage to:
+  - Missing or ambiguous fields.
+  - New or rare layout cases.
+- Caching AI/ML results for repeated securities or strings.
+- Enabling batch processing and parallelization across:
+  - Multiple PDFs.
+  - Multiple pages within a PDF.
+
+The goal is to keep per-PDF processing fast and predictable, making it feasible to process hundreds of funds on a schedule (e.g., nightly or weekly).
+
+
+7. Prototype Scope
+------------------
+
+For the prototype (proof-of-concept):
+- Implementation language: Python is a strong candidate due to:
+  - Mature PDF parsing libraries.
+  - Strong data-wrangling ecosystem (pandas, etc.).
+- Minimal viable features:
+  - Ingest at least one sample PDF (e.g., Hartford Balanced Income Fund).
+  - Implement a layout profile for that fund’s Schedule of Investments.
+  - Extract:
+    - Fund name and report date.
+    - A subset of holdings with key fields:
+      - security_name
+      - security_type (if available)
+      - principal
+      - market_value
+      - sector (if easily accessible from the table headers).
+  - Output results as JSON and/or CSV.
+- Stretch goals:
+  - Support a second layout (e.g., GSAM or BlackRock) using an additional layout profile.
+  - Demonstrate basic validation checks and simple error reporting.
+
+
+8. Deliverables Alignment
+-------------------------
+
+The planned solution and prototype will support:
+- Solution design document:
+  - Overview and high-level architecture.
+  - Steps and workflow for onboarding new funds.
+  - Validation strategy and ideas for a review UI.
+  - Performance and cost considerations.
+  - Sequence diagram and pseudocode describing the pipeline.
+- Prototype:
+  - Code that runs against at least one sample PDF and extracts core Schedule of Investments fields.
+  - Example output files (JSON/CSV) for inclusion in the documentation.
+
+

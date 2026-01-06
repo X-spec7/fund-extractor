@@ -3,7 +3,8 @@ from typing import List, Optional
 
 import pdfplumber
 
-from .hartford_profile import HartfordHolding, HARTFORD_SOI_HEADER_KEY
+from .hartford_profile import HARTFORD_SOI_HEADER_KEY
+from .models import Holding
 
 
 FUND_NAME_PATTERN = re.compile(r"The Hartford .* Fund", re.IGNORECASE)
@@ -43,13 +44,13 @@ def _parse_number(raw: str) -> Optional[float]:
         return None
 
 
-def extract_hartford_holdings(pdf: pdfplumber.PDF) -> List[HartfordHolding]:
+def extract_hartford_holdings(pdf: pdfplumber.PDF) -> List[Holding]:
     fund_name, report_date = _find_fund_name_and_date(pdf)
     start_page_idx = _find_schedule_start_page(pdf)
     if start_page_idx is None:
         return []
 
-    holdings: List[HartfordHolding] = []
+    holdings: List[Holding] = []
     current_sector: Optional[str] = None
     current_security_type: Optional[str] = None
 
@@ -101,11 +102,12 @@ def extract_hartford_holdings(pdf: pdfplumber.PDF) -> List[HartfordHolding]:
                     continue
 
                 holdings.append(
-                    HartfordHolding(
+                    Holding(
                         fund_name=fund_name,
                         report_date=report_date,
                         security_name=security_name,
                         security_type=current_security_type,
+                        country_iso3=None,
                         sector=current_sector,
                         shares=None,  # for convertible bonds, treat numeric as principal
                         principal=principal,
