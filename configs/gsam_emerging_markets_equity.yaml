@@ -1,0 +1,25 @@
+id: gsam_emerging_markets_equity
+fund_name_patterns:
+  - "GOLDMAN\\s*SACHS\\s*EMERGING\\s*MARKETS\\s*EQUITY\\s*FUND"
+schedule_header: "Schedule of Investments"
+layout:
+  type: one_column_line_numeric
+  columns: 1
+  shares_token_index: 0
+  value_token_index: 1
+instrument_headers:
+  CommonStocks: "Common Stock"
+  PreferredStock: "Preferred Stock"
+stop_line_prefixes:
+  - "TOTAL INVESTMENTS"
+  - "TOTTTAL INVESTMENTS"
+stop_line_contains:
+  - "%of"
+  - "SectorName"
+noise_prefixes:
+  - "TOTTTAL COMMON STOCKS"
+  - "TOTTTALPREFERREDSTOCKS"
+  - "TOTTTAL INVESTMENTS"
+  - "LIABILITIESINEXCESSOFOTHERASSETS"
+
+

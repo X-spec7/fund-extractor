@@ -1,0 +1,15 @@
+id: hartford_balanced_income
+fund_name_patterns:
+  - "The\\s*Hartford\\s*Balanced\\s*Income\\s*Fund"
+schedule_header: "Schedule of Investments"
+layout:
+  type: hartford_custom
+  columns: 1
+  shares_token_index: 0
+  value_token_index: 1
+instrument_headers: {}
+stop_line_prefixes: []
+stop_line_contains: []
+noise_prefixes: []
+
+

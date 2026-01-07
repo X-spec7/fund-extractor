@@ -15,13 +15,13 @@ install: venv
 	$(PIP) install -r requirements.txt
 
 run-hartford:
-	$(PYTHON) main.py --fund hartford $(HARTFORD_PDF)
+	$(PYTHON) main.py --fund-id hartford_balanced_income $(HARTFORD_PDF)
 
 run-blackrock:
-	$(PYTHON) main.py --fund blackrock $(BLACKROCK_PDF)
+	$(PYTHON) main.py --fund-id blackrock_international $(BLACKROCK_PDF)
 
 run-gsam-em:
-	$(PYTHON) main.py --fund gsam-em $(GSAM_PDF)
+	$(PYTHON) main.py --fund-id gsam_emerging_markets_equity $(GSAM_PDF)
 
 clean:
 	rm -rf $(VENV) output
