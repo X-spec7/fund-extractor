@@ -44,12 +44,70 @@ def extract_with_layout(pdf: pdfplumber.PDF, cfg: LayoutConfig, fund_name: str, 
 
     holdings: List[Holding] = []
 
-    # Find pages containing the Schedule of Investments header
-    schedule_pages: List[int] = []
+    # Find anchor pages that clearly belong to this fund's Schedule of Investments
+    anchor_pages: List[int] = []
+    name_patterns = [re.compile(p, re.IGNORECASE) for p in (cfg.fund_name_patterns or [])]
+
     for idx, page in enumerate(pdf.pages):
         text = page.extract_text() or ""
-        if cfg.schedule_header in text:
-            schedule_pages.append(idx)
+        if cfg.schedule_header not in text:
+            continue
+
+        if not name_patterns:
+            anchor_pages.append(idx)
+            continue
+
+        text_nospace = text.replace(" ", "")
+        for patt in name_patterns:
+            if patt.search(text) or patt.search(text_nospace):
+                anchor_pages.append(idx)
+                break
+
+    # If no anchors found, fall back to simple header-based detection
+    if not anchor_pages:
+        schedule_pages: List[int] = [
+            idx
+            for idx, page in enumerate(pdf.pages)
+            if (page.extract_text() or "").find(cfg.schedule_header) != -1
+        ]
+    else:
+        # Start with anchor pages, then fill in plausible continuation pages
+        schedule_pages_set = set(anchor_pages)
+
+        def page_looks_like_holdings(text: str) -> bool:
+            if not text.strip():
+                return False
+            text_nospace_local = re.sub(r"\s+", "", text)
+            # Instrument headers present?
+            for hdr in (cfg.instrument_headers or {}).keys():
+                hdr_nospace = re.sub(r"\s+", "", hdr)
+                if hdr in text or hdr_nospace in text_nospace_local:
+                    return True
+            # Heuristic: several lines starting with shares and ending with a number
+            count = 0
+            for line in text.splitlines():
+                line = line.strip()
+                if re.match(r"^[0-9][0-9,]*\s+.*[0-9][0-9,]+$", line):
+                    count += 1
+                if count >= 3:
+                    return True
+            return False
+
+        anchors_sorted = sorted(anchor_pages)
+        num_pages = len(pdf.pages)
+
+        # Fill gaps between anchors
+        for i in range(len(anchors_sorted) - 1):
+            start = anchors_sorted[i]
+            end = anchors_sorted[i + 1]
+            for idx in range(start + 1, end):
+                if idx in schedule_pages_set:
+                    continue
+                text = pdf.pages[idx].extract_text() or ""
+                if page_looks_like_holdings(text):
+                    schedule_pages_set.add(idx)
+
+        schedule_pages = sorted(schedule_pages_set)
 
     current_security_type: str | None = None
 
