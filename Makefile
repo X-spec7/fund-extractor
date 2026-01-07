@@ -2,8 +2,8 @@ VENV := .venv
 PYTHON := $(VENV)/bin/python
 PIP := $(VENV)/bin/pip
 
-BLACKROCK_PDF ?= /root/test/fund-extractor/fund-reports/blackrock.pdf
-GSAM_PDF ?= /root/test/fund-extractor/fund-reports/gsam.pdf
+BLACKROCK_PDF ?= ./fund-reports/blackrock.pdf
+GSAM_PDF ?= ./fund-reports/gsam.pdf
 
 
 .PHONY: venv install run-blackrock run-gsam-em gen-config clean
