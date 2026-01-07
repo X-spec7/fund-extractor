@@ -13,7 +13,7 @@
   {
     "fund_name": "BlackRock International Fund",
     "report_date": "August 31, 2025",
-    "security_name": "Toronto-Dominion Bank(The)",
+    "security_name": "Toronto- Dominion Bank( The)",
     "security_type": "Common Stock",
     "country_iso3": "CAN",
     "sector": null,
@@ -57,7 +57,7 @@
   {
     "fund_name": "BlackRock International Fund",
     "report_date": "August 31, 2025",
-    "security_name": "Novo Nordisk A/S, Class B",
+    "security_name": "Novo Nordisk A/ S, Class B",
     "security_type": "Common Stock",
     "country_iso3": "DNK",
     "sector": null,
@@ -79,7 +79,7 @@
   {
     "fund_name": "BlackRock International Fund",
     "report_date": "August 31, 2025",
-    "security_name": "Ciede Saint-Gobain SA",
+    "security_name": "Ciede Saint- Gobain SA",
     "security_type": "Common Stock",
     "country_iso3": "FRA",
     "sector": null,
@@ -167,7 +167,7 @@
   {
     "fund_name": "BlackRock International Fund",
     "report_date": "August 31, 2025",
-    "security_name": "Honda Motor Co.Ltd",
+    "security_name": "Honda Motor Co. Ltd",
     "security_type": "Common Stock",
     "country_iso3": "JPN",
     "sector": null,
@@ -310,7 +310,7 @@
   {
     "fund_name": "BlackRock International Fund",
     "report_date": "August 31, 2025",
-    "security_name": "Nestl\u00e9SA, Registered Shares",
+    "security_name": "Nestl\u00e9 SA, Registered Shares",
     "security_type": "Common Stock",
     "country_iso3": "CHE",
     "sector": null,
@@ -354,7 +354,7 @@
   {
     "fund_name": "BlackRock International Fund",
     "report_date": "August 31, 2025",
-    "security_name": "Taiwan Semiconductor Manufacturing Co.Ltd",
+    "security_name": "Taiwan Semiconductor Manufacturing Co. Ltd",
     "security_type": "Common Stock",
     "country_iso3": "TWN",
     "sector": null,
@@ -460,203 +460,5 @@
     "shares": 199209.0,
     "principal": null,
     "market_value": 17207673.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "(Cost:$",
-    "security_type": "Common Stock",
-    "country_iso3": "USA",
-    "sector": null,
-    "shares": 1039929444.0,
-    "principal": null,
-    "market_value": 1146418342.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "Money Market Funds\u2014",
-    "security_type": "Money Market Fund",
-    "country_iso3": "USA",
-    "sector": null,
-    "shares": 0.0,
-    "principal": null,
-    "market_value": 2.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "Shares,",
-    "security_type": "Money Market Fund",
-    "country_iso3": "USA",
-    "sector": null,
-    "shares": 4.0,
-    "principal": null,
-    "market_value": 16.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "(Cost:$",
-    "security_type": "Money Market Fund",
-    "country_iso3": "USA",
-    "sector": null,
-    "shares": 2296729.0,
-    "principal": null,
-    "market_value": 2296729.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "(Cost:$",
-    "security_type": "Money Market Fund",
-    "country_iso3": "USA",
-    "sector": null,
-    "shares": 1042226173.0,
-    "principal": null,
-    "market_value": 1148715071.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "Other Assets Less Liabilities\u2014",
-    "security_type": "Money Market Fund",
-    "country_iso3": "USA",
-    "sector": null,
-    "shares": 0.0,
-    "principal": null,
-    "market_value": 3.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "Net Assets\u2014",
-    "security_type": "Money Market Fund",
-    "country_iso3": "USA",
-    "sector": null,
-    "shares": 100.0,
-    "principal": null,
-    "market_value": 0.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "BNM",
-    "security_type": "Money Market Fund",
-    "country_iso3": "USA",
-    "sector": null,
-    "shares": 1025.0,
-    "principal": null,
-    "market_value": 4928972.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "Affiliated Issuer",
-    "security_type": "Money Market Fund",
-    "country_iso3": null,
-    "sector": null,
-    "shares": 5.0,
-    "principal": null,
-    "market_value": 31.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "Institutional Shares................... $",
-    "security_type": "Money Market Fund",
-    "country_iso3": null,
-    "sector": null,
-    "shares": 9597371.0,
-    "principal": null,
-    "market_value": 7300642.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "\u2022 Level",
-    "security_type": "Money Market Fund",
-    "country_iso3": null,
-    "sector": null,
-    "shares": 2.0,
-    "principal": null,
-    "market_value": 1.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "ed August",
-    "security_type": "Common Stock",
-    "country_iso3": null,
-    "sector": null,
-    "shares": 312025.0,
-    "principal": null,
-    "market_value": 2.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "(Loss) (Depreciation)",
-    "security_type": "Common Stock",
-    "country_iso3": null,
-    "sector": null,
-    "shares": 8.0,
-    "principal": null,
-    "market_value": 31.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "(a) $ \u2014 $ \u2014 $",
-    "security_type": "Common Stock",
-    "country_iso3": null,
-    "sector": null,
-    "shares": 2296729.0,
-    "principal": null,
-    "market_value": 2296729.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "Level",
-    "security_type": "Common Stock",
-    "country_iso3": null,
-    "sector": null,
-    "shares": 1.0,
-    "principal": null,
-    "market_value": 2.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "BNM",
-    "security_type": "Common Stock",
-    "country_iso3": null,
-    "sector": null,
-    "shares": 1025.0,
-    "principal": null,
-    "market_value": 4928972.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "Level",
-    "security_type": "Money Market Fund",
-    "country_iso3": null,
-    "sector": null,
-    "shares": 1.0,
-    "principal": null,
-    "market_value": 2.0
-  },
-  {
-    "fund_name": "BlackRock International Fund",
-    "report_date": "August 31, 2025",
-    "security_name": "BNM",
-    "security_type": "Money Market Fund",
-    "country_iso3": null,
-    "sector": null,
-    "shares": 1025.0,
-    "principal": null,
-    "market_value": 4928972.0
   }
 ]

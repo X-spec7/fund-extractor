@@ -66,15 +66,42 @@ def _parse_number(raw: str) -> Optional[float]:
 def _normalize_security_name(name: str) -> str:
     """
     Heuristically re-insert spaces that are often missing in the PDF text, e.g.
-    'AssaAbloyAB,ClassB' -> 'Assa Abloy AB, Class B'.
+    'AssaAbloyAB,ClassB' -> 'Assa Abloy AB, Class B',
+    'NestléSA,RegisteredShares' -> 'Nestlé SA, Registered Shares'.
     """
-    # Space between lowercase letter and uppercase letter
-    name = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", name)
+    # Space between a non-space, non-uppercase char and an uppercase char
+    # (this catches accented lowercase letters as well).
+    name = re.sub(r"(?<=[^\sA-Z,])(?=[A-Z])", " ", name)
     # Space after comma if missing
     name = re.sub(r",(?=[A-Za-z])", ", ", name)
     # Collapse multiple spaces
     name = re.sub(r"\\s{2,}", " ", name)
     return name.strip()
+
+
+_NOISE_PREFIXES = [
+    "Total Long- Term Investments",
+    "Total Long-Term Investments",
+    "Total Investments",
+    "(Cost:$",
+    "( Cost:$",
+    "Money Market Funds",
+    "Other Assets",
+    "Net Assets",
+    "Shares,",
+    "Affiliated Issuer",
+    "Institutional Shares",
+    "Level",
+    "BNM",
+    "• Level",
+]
+
+
+def _is_noise_name(name: str) -> bool:
+    for p in _NOISE_PREFIXES:
+        if name.startswith(p):
+            return True
+    return False
 
 
 def extract_blackrock_international(pdf: pdfplumber.PDF) -> List[Holding]:
@@ -94,8 +121,12 @@ def extract_blackrock_international(pdf: pdfplumber.PDF) -> List[Holding]:
             schedule_pages.append(idx)
 
     current_security_type: Optional[str] = None
+    end_reached = False
 
     for page_idx in schedule_pages:
+        if end_reached:
+            break
+
         page = pdf.pages[page_idx]
         mid_x = page.width / 2.0
 
@@ -107,6 +138,9 @@ def extract_blackrock_international(pdf: pdfplumber.PDF) -> List[Holding]:
         ]
 
         for (x0, y0, x1, y1) in column_boxes:
+            if end_reached:
+                break
+
             col_page = page.crop((x0, y0, x1, y1))
             text = col_page.extract_text() or ""
 
@@ -116,6 +150,20 @@ def extract_blackrock_international(pdf: pdfplumber.PDF) -> List[Holding]:
                 line = raw_line.strip()
                 if not line:
                     continue
+
+                # Stop parsing once we reach totals or the start of short-term / other sections.
+                if line.startswith("Total Long-Term Investments"):
+                    # Mark the end of the equity holdings section on this page.
+                    end_reached = True
+                    break
+                if (
+                    line.startswith("Total Investments")
+                    or line.startswith("Short-Term Securities")
+                    or line.startswith("Affiliates")
+                    or line.startswith("Fair Value Hierarchy")
+                ):
+                    end_reached = True
+                    break
 
                 # Detect section headers (but do not skip line; it may also carry a country heading)
                 if line.startswith("CommonStocks"):
@@ -129,8 +177,10 @@ def extract_blackrock_international(pdf: pdfplumber.PDF) -> List[Holding]:
                     current_country_iso3 = iso
                     continue
 
-                # Skip header and total lines
-                if line.startswith("Security Shares Value") or line.startswith("Total"):
+                # Skip obvious non-holding lines
+                if line.startswith("Security Shares Value") or line.startswith("Other Assets") or line.startswith(
+                    "Net Assets"
+                ):
                     continue
 
                 # We only care about lines with letters and at least two numeric tokens
@@ -150,7 +200,11 @@ def extract_blackrock_international(pdf: pdfplumber.PDF) -> List[Holding]:
 
                 security_name = line[:first_idx].rstrip(". ").strip()
                 security_name = _normalize_security_name(security_name)
-                if not security_name:
+                if not security_name or _is_noise_name(security_name):
+                    continue
+
+                # For this prototype, only keep true equity holdings; skip money market
+                if current_security_type != "Common Stock":
                     continue
 
                 holdings.append(
