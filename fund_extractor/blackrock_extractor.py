@@ -93,66 +93,79 @@ def extract_blackrock_international(pdf: pdfplumber.PDF) -> List[Holding]:
         if "Schedule of Investments" in text:
             schedule_pages.append(idx)
 
-    current_country_heading: Optional[str] = None
-    current_country_iso3: Optional[str] = None
     current_security_type: Optional[str] = None
 
     for page_idx in schedule_pages:
-        text = pdf.pages[page_idx].extract_text() or ""
-        for raw_line in text.splitlines():
-            line = raw_line.strip()
-            if not line:
-                continue
+        page = pdf.pages[page_idx]
+        mid_x = page.width / 2.0
 
-            # Detect section headers (but do not skip line; it may also carry a country heading)
-            if line.startswith("CommonStocks"):
-                current_security_type = "Common Stock"
-            if line.startswith("MoneyMarketFunds"):
-                current_security_type = "Money Market Fund"
-            # Country headings like 'Canada—6.5%' or 'Sweden—5.2%'
-            iso = country_heading_to_iso3(line)
-            if iso:
-                current_country_heading = line
-                current_country_iso3 = iso
-                continue
+        # Process left and right columns separately to avoid lines that
+        # concatenate left-column holdings with right-column country headers.
+        column_boxes = [
+            (0, 0, mid_x, page.height),
+            (mid_x, 0, page.width, page.height),
+        ]
 
-            # Skip header and total lines
-            if line.startswith("Security Shares Value") or line.startswith("Total"):
-                continue
+        for (x0, y0, x1, y1) in column_boxes:
+            col_page = page.crop((x0, y0, x1, y1))
+            text = col_page.extract_text() or ""
 
-            # We only care about lines with letters and at least two numeric tokens
-            if not re.search(r"[A-Za-z]", line):
-                continue
+            current_country_iso3: Optional[str] = None
 
-            numeric_tokens = _parse_numeric_tokens(line)
-            if len(numeric_tokens) < 2:
-                continue
+            for raw_line in text.splitlines():
+                line = raw_line.strip()
+                if not line:
+                    continue
 
-            # Use first numeric token as shares, second as market value; ignore any trailing totals.
-            first_idx, first_token = numeric_tokens[0]
-            _, second_token = numeric_tokens[1]
+                # Detect section headers (but do not skip line; it may also carry a country heading)
+                if line.startswith("CommonStocks"):
+                    current_security_type = "Common Stock"
+                if line.startswith("MoneyMarketFunds"):
+                    current_security_type = "Money Market Fund"
 
-            shares = _parse_number(first_token)
-            market_value = _parse_number(second_token)
+                # Country headings like 'Canada—6.5%' or 'Sweden—5.2%'
+                iso = country_heading_to_iso3(line)
+                if iso:
+                    current_country_iso3 = iso
+                    continue
 
-            security_name = line[:first_idx].rstrip(". ").strip()
-            security_name = _normalize_security_name(security_name)
-            if not security_name:
-                continue
+                # Skip header and total lines
+                if line.startswith("Security Shares Value") or line.startswith("Total"):
+                    continue
 
-            holdings.append(
-                Holding(
-                    fund_name=fund_name,
-                    report_date=report_date,
-                    security_name=security_name,
-                    security_type=current_security_type,
-                    country_iso3=current_country_iso3,
-                    sector=None,
-                    shares=shares,
-                    principal=None,
-                    market_value=market_value,
+                # We only care about lines with letters and at least two numeric tokens
+                if not re.search(r"[A-Za-z]", line):
+                    continue
+
+                numeric_tokens = _parse_numeric_tokens(line)
+                if len(numeric_tokens) < 2:
+                    continue
+
+                # Use first numeric token as shares, second as market value; ignore any trailing totals.
+                first_idx, first_token = numeric_tokens[0]
+                _, second_token = numeric_tokens[1]
+
+                shares = _parse_number(first_token)
+                market_value = _parse_number(second_token)
+
+                security_name = line[:first_idx].rstrip(". ").strip()
+                security_name = _normalize_security_name(security_name)
+                if not security_name:
+                    continue
+
+                holdings.append(
+                    Holding(
+                        fund_name=fund_name,
+                        report_date=report_date,
+                        security_name=security_name,
+                        security_type=current_security_type,
+                        country_iso3=current_country_iso3,
+                        sector=None,
+                        shares=shares,
+                        principal=None,
+                        market_value=market_value,
+                    )
                 )
-            )
 
     return holdings
 

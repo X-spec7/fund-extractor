@@ -43,11 +43,20 @@ def country_heading_to_iso3(heading: str) -> str | None:
     """
     import re
 
+    # Normalize by also considering a version without spaces, since some PDFs
+    # drop spaces in headings (e.g. 'UnitedKingdom—15.7%').
+    heading_nospace = heading.replace(" ", "")
+
     for name, iso in COUNTRY_TO_ISO3.items():
-        # \b ensures we're matching the whole country name, not a substring,
-        # and we allow optional whitespace before the dash.
-        pattern = rf"\b{name}\b\s*[—\-–]"
-        if re.search(pattern, heading):
+        # Pattern with spaces (normal case)
+        pattern_with_space = rf"\b{name}\b\s*[—\-–]"
+        if re.search(pattern_with_space, heading):
+            return iso
+
+        # Pattern without spaces (to catch e.g. 'UnitedKingdom—')
+        name_nospace = name.replace(" ", "")
+        pattern_nospace = rf"{name_nospace}\s*[—\-–]"
+        if re.search(pattern_nospace, heading_nospace):
             return iso
     return None
 

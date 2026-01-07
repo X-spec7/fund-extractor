@@ -1,73 +1,61 @@
 fund_name,report_date,security_name,security_type,country_iso3,sector,shares,principal,market_value
-BlackRock International Fund,"August 31, 2025","Assa Abloy AB, Class B",Common Stock,SWE,,859141.0,,30357518.0
-BlackRock International Fund,"August 31, 2025","Atlas Copco AB, Class A",Common Stock,CAN,,1891474.0,,30197341.0
 BlackRock International Fund,"August 31, 2025","Teck Resources Ltd., Class B",Common Stock,CAN,,742465.0,,25387670.0
 BlackRock International Fund,"August 31, 2025",Toronto-Dominion Bank(The),Common Stock,CAN,,411203.0,,30875781.0
-BlackRock International Fund,"August 31, 2025","NestléSA, Registered Shares",Common Stock,CHE,,346049.0,,32642989.0
-BlackRock International Fund,"August 31, 2025","UBSGroup AG, Registered Shares",Common Stock,CHE,,716811.0,,29037605.0
-BlackRock International Fund,"August 31, 2025","Zurich Insurance Group AG, Class N",Common Stock,CHN,,31978.0,,23368101.0
+BlackRock International Fund,"August 31, 2025","Waste Connections, Inc",Common Stock,CAN,,98528.0,,18208327.0
 BlackRock International Fund,"August 31, 2025","Alibaba Group Holding Ltd., ADR",Common Stock,CHN,,238868.0,,32247180.0
 BlackRock International Fund,"August 31, 2025",Tencent Holdings Ltd,Common Stock,CHN,,508100.0,,39349555.0
-BlackRock International Fund,"August 31, 2025","Media Tek, Inc",Common Stock,TWN,,487000.0,,21640353.0
-BlackRock International Fund,"August 31, 2025",Taiwan Semiconductor Manufacturing Co.Ltd,Common Stock,DNK,,1522000.0,,57001048.0
 BlackRock International Fund,"August 31, 2025","Novo Nordisk A/S, Class B",Common Stock,DNK,,509065.0,,28766966.0
-BlackRock International Fund,"August 31, 2025",United Kingdom—,Common Stock,FRA,,15.0,,7.0
 BlackRock International Fund,"August 31, 2025",Air Liquide SA,Common Stock,FRA,,199765.0,,41159082.0
-BlackRock International Fund,"August 31, 2025",Astra Zeneca PLC,Common Stock,FRA,,215670.0,,34380908.0
 BlackRock International Fund,"August 31, 2025",Ciede Saint-Gobain SA,Common Stock,FRA,,156027.0,,16844554.0
-BlackRock International Fund,"August 31, 2025",British American Tobacco PLC,Common Stock,FRA,,426880.0,,24241515.0
 BlackRock International Fund,"August 31, 2025",Essilor Luxottica SA,Common Stock,FRA,,74855.0,,22833427.0
-BlackRock International Fund,"August 31, 2025",Haleon PLC,Common Stock,FRA,,4899339.0,,24110839.0
 BlackRock International Fund,"August 31, 2025",Sanofi SA,Common Stock,FRA,,245969.0,,24403081.0
-BlackRock International Fund,"August 31, 2025",RELXPLC,Common Stock,FRA,,713049.0,,33181438.0
 BlackRock International Fund,"August 31, 2025","Deutsche Telekom AG, Registered Shares",Common Stock,DEU,,661616.0,,24211850.0
 BlackRock International Fund,"August 31, 2025",SAPSE,Common Stock,DEU,,121122.0,,32968971.0
-BlackRock International Fund,"August 31, 2025",United States—,Common Stock,DEU,,5.0,,2.0
 BlackRock International Fund,"August 31, 2025",Axis Bank Ltd,Common Stock,IND,,1527424.0,,18109821.0
 BlackRock International Fund,"August 31, 2025",HDFCBank Ltd,Common Stock,IND,,1911478.0,,20631399.0
 BlackRock International Fund,"August 31, 2025",Fineco Bank Banca Fineco Sp A,Common Stock,ITA,,1547960.0,,33980586.0
 BlackRock International Fund,"August 31, 2025",Honda Motor Co.Ltd,Common Stock,JPN,,1843600.0,,20436255.0
-BlackRock International Fund,"August 31, 2025",Money Market Funds—,Money Market Fund,JPN,,0.0,,2.0
-BlackRock International Fund,"August 31, 2025",Keyence Corp,Money Market Fund,JPN,,68300.0,,26038920.0
-BlackRock International Fund,"August 31, 2025",Sony Group Corp,Money Market Fund,JPN,,1344000.0,,36733054.0
-BlackRock International Fund,"August 31, 2025","Shares,",Money Market Fund,JPN,,4.0,,16.0
-BlackRock International Fund,"August 31, 2025",ASMInternational NV,Money Market Fund,NLD,,51628.0,,24790231.0
-BlackRock International Fund,"August 31, 2025",ASRNederland NV,Money Market Fund,NLD,,245893.0,,17059489.0
-BlackRock International Fund,"August 31, 2025",(Cost:$,Money Market Fund,NLD,,1042226173.0,,1148715071.0
-BlackRock International Fund,"August 31, 2025",Koninklijke KPNNV,Money Market Fund,NLD,,7645887.0,,36487389.0
-BlackRock International Fund,"August 31, 2025",Other Assets Less Liabilities—,Money Market Fund,NLD,,0.0,,3.0
-BlackRock International Fund,"August 31, 2025",Net Assets—,Money Market Fund,NLD,,100.0,,0.0
-BlackRock International Fund,"August 31, 2025",United Overseas Bank Ltd,Money Market Fund,SGP,,788300.0,,21588904.0
-BlackRock International Fund,"August 31, 2025",South Korea—,Money Market Fund,SGP,,2.0,,5.0
-BlackRock International Fund,"August 31, 2025",Kia Corp,Money Market Fund,SGP,,233825.0,,17692020.0
-BlackRock International Fund,"August 31, 2025","SKHynix, Inc",Money Market Fund,SGP,,60514.0,,11530180.0
-BlackRock International Fund,"August 31, 2025",Banco Bilbao Vizcaya Argentaria SA,Money Market Fund,ESP,,1924955.0,,35032282.0
-BlackRock International Fund,"August 31, 2025",Industriade Diseno Textil SA,Money Market Fund,ESP,,494958.0,,24480314.0
-BlackRock International Fund,"August 31, 2025",BNM,Money Market Fund,ESP,,1025.0,,4928972.0
-BlackRock International Fund,"August 31, 2025",Investmentsinissuersconsideredtobeaffiliate(s)ofthe Fundduringtheperiodended August,Money Market Fund,ESP,,312025.0,,2.0
-BlackRock International Fund,"August 31, 2025",Affiliated Issuer,Money Market Fund,ESP,,5.0,,31.0
-BlackRock International Fund,"August 31, 2025",Institutional Shares................... $,Money Market Fund,ESP,,9597371.0,,7300642.0
-BlackRock International Fund,"August 31, 2025",• Level,Money Market Fund,ESP,,2.0,,1.0
-BlackRock International Fund,"August 31, 2025",unobservableinputs(Level,Money Market Fund,ESP,,3.0,,3.0
-BlackRock International Fund,"August 31, 2025",Level,Money Market Fund,ESP,,1.0,,2.0
-BlackRock International Fund,"August 31, 2025",Canada........................................................................................... $,Common Stock,ESP,,74471778.0,,74471778.0
-BlackRock International Fund,"August 31, 2025",China,Common Stock,ESP,,32247180.0,,39349555.0
-BlackRock International Fund,"August 31, 2025",Denmark.......................................................................................... —,Common Stock,ESP,,28766966.0,,28766966.0
-BlackRock International Fund,"August 31, 2025",France............................................................................................ —,Common Stock,ESP,,105240144.0,,105240144.0
-BlackRock International Fund,"August 31, 2025",Germany.......................................................................................... —,Common Stock,ESP,,57180821.0,,57180821.0
-BlackRock International Fund,"August 31, 2025",India.............................................................................................. —,Common Stock,ESP,,38741220.0,,38741220.0
-BlackRock International Fund,"August 31, 2025",Italy............................................................................................... —,Common Stock,ESP,,33980586.0,,33980586.0
-BlackRock International Fund,"August 31, 2025",Japan............................................................................................. —,Common Stock,ESP,,83208229.0,,83208229.0
-BlackRock International Fund,"August 31, 2025",Netherlands....................................................................................... —,Common Stock,ESP,,78337109.0,,78337109.0
-BlackRock International Fund,"August 31, 2025",Singapore......................................................................................... —,Common Stock,ESP,,21588904.0,,21588904.0
-BlackRock International Fund,"August 31, 2025",South Korea....................................................................................... —,Common Stock,ESP,,29222200.0,,29222200.0
-BlackRock International Fund,"August 31, 2025",Spain............................................................................................. —,Common Stock,ESP,,59512596.0,,59512596.0
-BlackRock International Fund,"August 31, 2025",Sweden........................................................................................... —,Common Stock,ESP,,60554859.0,,60554859.0
-BlackRock International Fund,"August 31, 2025",Switzerland....................................................................................... —,Common Stock,ESP,,85048695.0,,85048695.0
-BlackRock International Fund,"August 31, 2025",Taiwan............................................................................................ —,Common Stock,ESP,,78641401.0,,78641401.0
-BlackRock International Fund,"August 31, 2025",United Kingdom................................................................................... —,Common Stock,ESP,,180536697.0,,180536697.0
-BlackRock International Fund,"August 31, 2025",United States,Common Stock,ESP,,59789402.0,,59789402.0
-BlackRock International Fund,"August 31, 2025",BNM,Common Stock,ESP,,1025.0,,4928972.0
-BlackRock International Fund,"August 31, 2025",Level,Common Stock,ESP,,1.0,,2.0
-BlackRock International Fund,"August 31, 2025",Money Market Funds................................................................................. $,Money Market Fund,ESP,,2296729.0,,2296729.0
-BlackRock International Fund,"August 31, 2025",BNM,Money Market Fund,ESP,,1025.0,,4928972.0
+BlackRock International Fund,"August 31, 2025",Keyence Corp,Common Stock,JPN,,68300.0,,26038920.0
+BlackRock International Fund,"August 31, 2025",Sony Group Corp,Common Stock,JPN,,1344000.0,,36733054.0
+BlackRock International Fund,"August 31, 2025",ASMInternational NV,Common Stock,NLD,,51628.0,,24790231.0
+BlackRock International Fund,"August 31, 2025",ASRNederland NV,Common Stock,NLD,,245893.0,,17059489.0
+BlackRock International Fund,"August 31, 2025",Koninklijke KPNNV,Common Stock,NLD,,7645887.0,,36487389.0
+BlackRock International Fund,"August 31, 2025",United Overseas Bank Ltd,Common Stock,SGP,,788300.0,,21588904.0
+BlackRock International Fund,"August 31, 2025",Kia Corp,Common Stock,KOR,,233825.0,,17692020.0
+BlackRock International Fund,"August 31, 2025","SKHynix, Inc",Common Stock,KOR,,60514.0,,11530180.0
+BlackRock International Fund,"August 31, 2025",Banco Bilbao Vizcaya Argentaria SA,Common Stock,ESP,,1924955.0,,35032282.0
+BlackRock International Fund,"August 31, 2025",Industriade Diseno Textil SA,Common Stock,ESP,,494958.0,,24480314.0
+BlackRock International Fund,"August 31, 2025","Assa Abloy AB, Class B",Common Stock,SWE,,859141.0,,30357518.0
+BlackRock International Fund,"August 31, 2025","Atlas Copco AB, Class A",Common Stock,SWE,,1891474.0,,30197341.0
+BlackRock International Fund,"August 31, 2025","NestléSA, Registered Shares",Common Stock,CHE,,346049.0,,32642989.0
+BlackRock International Fund,"August 31, 2025","UBSGroup AG, Registered Shares",Common Stock,CHE,,716811.0,,29037605.0
+BlackRock International Fund,"August 31, 2025","Zurich Insurance Group AG, Class N",Common Stock,CHE,,31978.0,,23368101.0
+BlackRock International Fund,"August 31, 2025","Media Tek, Inc",Common Stock,TWN,,487000.0,,21640353.0
+BlackRock International Fund,"August 31, 2025",Taiwan Semiconductor Manufacturing Co.Ltd,Common Stock,TWN,,1522000.0,,57001048.0
+BlackRock International Fund,"August 31, 2025",Astra Zeneca PLC,Common Stock,GBR,,215670.0,,34380908.0
+BlackRock International Fund,"August 31, 2025",British American Tobacco PLC,Common Stock,GBR,,426880.0,,24241515.0
+BlackRock International Fund,"August 31, 2025",Haleon PLC,Common Stock,GBR,,4899339.0,,24110839.0
+BlackRock International Fund,"August 31, 2025",RELXPLC,Common Stock,GBR,,713049.0,,33181438.0
+BlackRock International Fund,"August 31, 2025",Shell PLC,Common Stock,GBR,,1331934.0,,49274303.0
+BlackRock International Fund,"August 31, 2025",Taylor Wimpey PLC,Common Stock,GBR,,11863434.0,,15347694.0
+BlackRock International Fund,"August 31, 2025",General Electric Co,Common Stock,USA,,65508.0,,18027802.0
+BlackRock International Fund,"August 31, 2025","Mastercard, Inc., Class A",Common Stock,USA,,41247.0,,24553927.0
+BlackRock International Fund,"August 31, 2025",Otis Worldwide Corp,Common Stock,USA,,199209.0,,17207673.0
+BlackRock International Fund,"August 31, 2025",(Cost:$,Common Stock,USA,,1039929444.0,,1146418342.0
+BlackRock International Fund,"August 31, 2025",Money Market Funds—,Money Market Fund,USA,,0.0,,2.0
+BlackRock International Fund,"August 31, 2025","Shares,",Money Market Fund,USA,,4.0,,16.0
+BlackRock International Fund,"August 31, 2025",(Cost:$,Money Market Fund,USA,,2296729.0,,2296729.0
+BlackRock International Fund,"August 31, 2025",(Cost:$,Money Market Fund,USA,,1042226173.0,,1148715071.0
+BlackRock International Fund,"August 31, 2025",Other Assets Less Liabilities—,Money Market Fund,USA,,0.0,,3.0
+BlackRock International Fund,"August 31, 2025",Net Assets—,Money Market Fund,USA,,100.0,,0.0
+BlackRock International Fund,"August 31, 2025",BNM,Money Market Fund,USA,,1025.0,,4928972.0
+BlackRock International Fund,"August 31, 2025",Affiliated Issuer,Money Market Fund,,,5.0,,31.0
+BlackRock International Fund,"August 31, 2025",Institutional Shares................... $,Money Market Fund,,,9597371.0,,7300642.0
+BlackRock International Fund,"August 31, 2025",• Level,Money Market Fund,,,2.0,,1.0
+BlackRock International Fund,"August 31, 2025",ed August,Common Stock,,,312025.0,,2.0
+BlackRock International Fund,"August 31, 2025",(Loss) (Depreciation),Common Stock,,,8.0,,31.0
+BlackRock International Fund,"August 31, 2025",(a) $ — $ — $,Common Stock,,,2296729.0,,2296729.0
+BlackRock International Fund,"August 31, 2025",Level,Common Stock,,,1.0,,2.0
+BlackRock International Fund,"August 31, 2025",BNM,Common Stock,,,1025.0,,4928972.0
+BlackRock International Fund,"August 31, 2025",Level,Money Market Fund,,,1.0,,2.0
+BlackRock International Fund,"August 31, 2025",BNM,Money Market Fund,,,1025.0,,4928972.0
