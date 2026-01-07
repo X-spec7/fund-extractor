@@ -62,13 +62,17 @@ def extract_with_layout(pdf: pdfplumber.PDF, cfg: LayoutConfig, fund_name: str, 
         width = page.width
         height = page.height
 
-        if cfg.layout_type == "two_column_line_numeric" and cfg.columns == 2:
-            boxes = [
-                (0, 0, width / 2.0, height),
-                (width / 2.0, 0, width, height),
-            ]
-        else:
+        # Compute column boxes generically based on the configured column count.
+        # This supports 1, 2, 3, 4, ... columns laid out horizontally.
+        if cfg.columns <= 1:
             boxes = [(0, 0, width, height)]
+        else:
+            col_width = width / float(cfg.columns)
+            boxes = []
+            for i in range(cfg.columns):
+                x0 = col_width * i
+                x1 = col_width * (i + 1)
+                boxes.append((x0, 0, x1, height))
 
         for (x0, y0, x1, y1) in boxes:
             if end_reached:
@@ -84,11 +88,18 @@ def extract_with_layout(pdf: pdfplumber.PDF, cfg: LayoutConfig, fund_name: str, 
                 if not line:
                     continue
 
+                line_nospace = re.sub(r"\s+", "", line)
+
                 # Stop when a stop prefix or substring is encountered
-                if any(line.startswith(p) for p in cfg.stop_line_prefixes or []):
-                    end_reached = True
+                for p in cfg.stop_line_prefixes or []:
+                    p_nospace = re.sub(r"\s+", "", p)
+                    if line.startswith(p) or line_nospace.startswith(p_nospace):
+                        end_reached = True
+                        break
+                if end_reached:
                     break
-                if any(s in line for s in cfg.stop_line_contains or []):
+
+                if any(s in line for s in (cfg.stop_line_contains or [])):
                     end_reached = True
                     break
 
@@ -105,7 +116,13 @@ def extract_with_layout(pdf: pdfplumber.PDF, cfg: LayoutConfig, fund_name: str, 
                     continue
 
                 # Skip noise lines
-                if any(line.startswith(p) for p in cfg.noise_prefixes or []):
+                skip = False
+                for p in cfg.noise_prefixes or []:
+                    p_nospace = re.sub(r"\s+", "", p)
+                    if line.startswith(p) or line_nospace.startswith(p_nospace):
+                        skip = True
+                        break
+                if skip:
                     continue
 
                 if not re.search(r"[A-Za-z]", line):

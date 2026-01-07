@@ -1,5 +1,6 @@
 import argparse
 import json
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -19,17 +20,9 @@ def main() -> None:
         help="Optional layout config id to force (e.g. 'blackrock_international'). "
         "If omitted, the tool will auto-detect based on fund name.",
     )
-    parser.add_argument(
-        "--out-json", type=Path, default=Path("./output/holdings.json"), help="Output JSON file path"
-    )
-    parser.add_argument(
-        "--out-csv", type=Path, default=Path("./output/holdings.csv"), help="Output CSV file path"
-    )
+    parser.add_argument("--out-json", type=Path, help="Optional explicit output JSON file path")
+    parser.add_argument("--out-csv", type=Path, help="Optional explicit output CSV file path")
     args = parser.parse_args()
-
-    # Ensure output directory exists
-    args.out_json.parent.mkdir(parents=True, exist_ok=True)
-    args.out_csv.parent.mkdir(parents=True, exist_ok=True)
 
     pdf = load_pdf(args.pdf)
 
@@ -53,9 +46,54 @@ def main() -> None:
         if cfg is None:
             raise SystemExit("Unable to detect fund layout: no matching configuration found.")
 
-    # For this prototype, we derive fund_name and report_date very simply:
+    # Derive fund_name and report_date from text (best-effort)
     fund_name = cfg.id
-    report_date = ""
+    raw_date = ""
+    date_tag = "unknown-date"
+
+    # Accept both 'August 31, 2025' and compact 'AUGUST31,2025' styles.
+    date_match = re.search(
+        r"(January|February|March|April|May|June|July|August|September|October|November|December)\s*(\d{1,2}),\s*(\d{4})",
+        text_first_pages,
+        re.IGNORECASE,
+    )
+    if date_match:
+        month, day, year = date_match.groups()
+        raw_date = f"{month.title()} {int(day)}, {year}"
+        # Build YYYYMMDD tag
+        month_map = {
+            "January": "01",
+            "February": "02",
+            "March": "03",
+            "April": "04",
+            "May": "05",
+            "June": "06",
+            "July": "07",
+            "August": "08",
+            "September": "09",
+            "October": "10",
+            "November": "11",
+            "December": "12",
+        }
+        mm = month_map.get(month.title(), "00")
+        date_tag = f"{year}{mm}{int(day):02d}"
+
+    report_date = raw_date
+
+    # Compute default output paths if not provided
+    out_dir = Path("output")
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    stem = Path(args.pdf).stem
+    if args.out_json is None:
+        args.out_json = out_dir / f"{cfg.id}_{date_tag}_{stem}.json"
+    else:
+        args.out_json.parent.mkdir(parents=True, exist_ok=True)
+
+    if args.out_csv is None:
+        args.out_csv = out_dir / f"{cfg.id}_{date_tag}_{stem}.csv"
+    else:
+        args.out_csv.parent.mkdir(parents=True, exist_ok=True)
 
     holdings = extract_with_layout(pdf, cfg, fund_name=fund_name, report_date=report_date)
 
