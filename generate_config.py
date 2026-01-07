@@ -169,7 +169,7 @@ def main() -> None:
     parser.add_argument(
         "--samples-dir",
         type=Path,
-        default=Path("report-samples"),
+        default=Path("report_samples"),
         help="Directory containing sample PDFs (used when no PDF argument is given).",
     )
     parser.add_argument(
@@ -186,7 +186,7 @@ def main() -> None:
     parser.add_argument(
         "--out-dir",
         type=Path,
-        default=Path("generated-configs"),
+        default=Path("generated_configs"),
         help="Directory where the generated YAML configs will be written.",
     )
     args = parser.parse_args()

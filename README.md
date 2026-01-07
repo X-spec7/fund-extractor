@@ -109,9 +109,9 @@ The output schema per holding (JSON/CSV) is:
 
 To onboard a new fund family quickly, you can use `generate_config.py` to
 bootstrap a YAML config using an LLM, based on a small sample of pages from a
-report in `report-samples/`.
+report in `report_samples/`.
 
-Generate configs for all PDFs in `report-samples/`:
+Generate configs for all PDFs in `report_samples/`:
 
 ```bash
 make gen-config
@@ -120,10 +120,10 @@ make gen-config
 or for a single sample PDF:
 
 ```bash
-python generate_config.py report-samples/blackrock.pdf --id blackrock_international
+python generate_config.py report_samples/blackrock.pdf --id blackrock_international
 ```
 
-This will write YAML files into `generated-configs/`. You should review and, if
+This will write YAML files into `generated_configs/`. You should review and, if
 necessary, tweak these YAMLs before moving them into `configs/` for use in
 production runs.
 
