@@ -1,10 +1,9 @@
 System Design for Mutual Fund “Schedule of Investments” PDF Data Extractor
 ==========================================================================
 
-1. Overview
------------
+## 1. Overview
 
-Mutual funds publish PDF reports (quarterly, semi-annual, annual) with heterogeneous layouts. The objective is to build a configurable, scalable system that extracts structured data from the **“Schedule of Investments”** section across many fund families (e.g., Hartford, GSAM, BlackRock).
+Mutual funds publish PDF reports (quarterly, semi-annual, annual) with heterogeneous layouts. The objective is to build a configurable, scalable system that extracts structured data from the **“Schedule of Investments”** section across many fund families (e.g., GSAM, BlackRock, and others).
 
 The system must:
 
@@ -21,18 +20,13 @@ The system must:
     - Principal
     - Market value
 
-Sample reports:
+Example sample reports (used during prototyping and testing):
 
-- Hartford Balanced Income Fund semi-annual report:  
-  `https://hartfordfunds.prospectus-express.com/summary.asp?doctype=semi&clientid=hartfordll&fundid=416648244&lpos=416648244_semi`
-- GSAM semi-annual report example:  
-  `https://www.gsam.com/bin/gsam/servlets/LiteratureViewerServlet?pdflink=/content/dam/gsam/pdfs/us/en/prospectus-and-regulatory/semi-annual-report/fundamental-intl-equity-sar.pdf&RequestURI=/content/gsam/us/en/advisors/fund-centre/fund-docs.html&sa=n`
-- BlackRock international fund report example:  
-  `https://www.blackrock.com/us/individual/resources/regulatory-documents/stream-document?stream=reg&product=MF_INTLE&shareClass=CLASS+A&documentId=920345%7E1831066%7E1831060%7E2165904%7E2118855%7E1858616%7E1858642&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Ffirst-quarter-report%2Ffqr-retail-blackrock-international-fund.pdf`
+- GSAM semi-annual report example (emerging markets equity fund).
+- BlackRock International Fund quarterly/annual report.
 
 
-2. High-Level Architecture
---------------------------
+## 2. High-Level Architecture
 
 Key idea: a **configuration-driven pipeline** that separates:
 
@@ -45,36 +39,34 @@ Main components:
 
 1. Ingestion & Preprocessing
 2. Fund/Layout Identification
-3. Layout Profiles (Configuration Layer)
-4. Table Detection & Extraction
+3. Layout Configs (Configuration Layer)
+4. Generic Table Detection & Extraction
 5. Field Mapping & Normalization
 6. Validation & Quality Checks
-7. Manual Review UI / Tooling
+7. Manual Review UI / Tooling (future)
 8. Export & Integration
+9. AI-Assisted Config Generation
 
 
-3. Component Design
--------------------
+## 3. Component Design
 
 ### 3.1 Ingestion & Preprocessing
 
 Responsibilities:
 
-- Accept PDFs via:
-  - File upload (CLI, web UI, batch job).
-  - URL (e.g., the Hartford / GSAM / BlackRock links above).
-- Store raw PDFs with metadata: source URL, timestamp, fund family if known.
-- Run a PDF processing stack:
-  - Primary: text and table extraction (`pdfplumber`, `pdfminer.six`, `camelot`, or `tabula-py`).
-  - Optional fallback: OCR (e.g., Tesseract) for scanned PDFs (may be out of scope for prototype).
-- Normalize output into an **intermediate representation (IR)**:
-  - Pages with:
-    - Text blocks + coordinates.
-    - Table candidates (cells with row/column indices, coordinates).
+- Expose APIs to accept PDFs:
+  - **Report ingestion**: single or batched uploads of mutual fund reports.
+  - **Config samples**: single or batched uploads of sample PDFs used to craft new layout configs.
+- Store raw PDFs in an **object store** (e.g., S3/GCS/Azure Blob) with stable URLs.
+- Maintain metadata in a **relational database**:
+  - `reports(id, fund_family, object_url, status, as_of_date, fund_name_guess, ...)`
+  - `config_samples(id, object_url, layout_id_guess, status, ...)`
+- Enqueue **asynchronous jobs** for extraction or config generation when files are uploaded.
+- Run a PDF processing stack inside extraction workers:
+  - Primary: text extraction library (e.g., `pdfplumber`/`pdfminer`) to obtain per-page text.
+  - OCR fallback for scanned/image-only PDFs (see Section 3.6).
 
-Outputs:
-
-- IR in a structured format (e.g., JSON) for downstream components.
+The ingestion layer is responsible for reliably receiving files, persisting them, and handing out identifiers and URLs that other components (extraction, config generator, review UI) can use.
 
 
 ### 3.2 Fund / Layout Identification
@@ -83,157 +75,144 @@ Goal: determine which **layout profile** to use for a given PDF.
 
 Approach:
 
-- **Heuristics**:
-  - Search for distinctive phrases on first N pages:
-    - “The Hartford Balanced Income Fund”, “Hartford Funds”.
-    - “Goldman Sachs”, “GSAM”.
-    - “BlackRock International Fund”, “BlackRock”.
-  - Identify report type (annual, semi-annual, etc.) via known phrases.
-- **Optional classifier**:
-  - Simple text-based classifier mapping PDFs to a known `layout_profile_id`.
+- Use **heuristics** and/or a lightweight classifier on the first N pages:
+  - Look for key phrases like `"Schedule of Investments"`, fund family names, or distinctive headers.
+  - Match against known layout configs by `layout_id`.
+- Optionally user to **force** a specific `layout_id` at ingestion time.
+- Persist the selected or guessed `layout_id` in the `reports` metadata.
 
 Output:
 
-- `layout_profile_id` (e.g., `hartford_balanced_income_v1`, `gsam_fundamental_equity_v1`).
+- `layout_id` / `layout_config` reference for the extraction workers to use.
 
 
-### 3.3 Layout Profiles (Configuration Layer)
+### 3.3 Layout Configs (Configuration Layer)
 
-A **layout profile** is a YAML/JSON configuration describing how to parse the Schedule of Investments for a particular fund layout.
+A **layout config** is a YAML/JSON document describing how to parse the Schedule of Investments for a particular fund layout. These configs are stored in a central repository (e.g., database + Git-backed files) and loaded by extraction workers at runtime.
 
 Configuration fields (examples):
 
 - **Section detection**:
-  - Regex/keywords for “Schedule of Investments”.
-  - Rules for start and end pages of the section.
+  - `schedule_header`: phrase to locate the Schedule of Investments (e.g., `"Schedule of Investments"`).
 - **Table structure**:
-  - Number of columns, presence of left/right tables on same page.
-  - Header row patterns:
-    - E.g., “Shares or Principal Amount”, “Market Value†”.
-  - Column-to-field mappings:
-    - Example:
-      - Column 0: `security_name`
-      - Column 1: `principal_or_shares`
-      - Column 2: `market_value`
-      - Sector from section headers.
-- **Row handling rules**:
-  - Merge multi-line security names.
-  - Skip rows with “Total …”, “(continued)”, footnotes.
-- **Multi-column / cross-page rules**:
-  - Coordinate ranges for left/right table regions.
-  - Header repetition/propagation across pages.
+  - `layout.type`: hints about row structure, e.g. `two_column_multiline_shares_first`.
+  - `layout.columns`: number of vertical columns on each page (e.g., 1, 2, 3).
+  - `layout.shares_token_index` / `layout.value_token_index`: which numeric tokens map to shares/principal vs. market value.
+- **Instrument headers**:
+  - `instrument_headers`: mapping from raw section headings to normalized `security_type` values.
+- **Stop / noise rules**:
+  - `stop_line_prefixes`: page-local prefixes that indicate the end of holdings (e.g., `"Total Long-Term Investments"`).
+  - `stop_line_contains`: substrings that indicate we should stop reading holdings on that page.
+  - `noise_prefixes`: lines to ignore (e.g., `(Cost: $...`, `Other Assets`, `Net Assets`).
 
 Benefits:
 
 - Onboarding a new fund = authoring/editing a config file, not writing parser code.
-- Profiles are versioned and testable.
 
 
-### 3.4 Table Detection & Extraction
+### 3.4 Generic Table Detection & Extraction
 
 Responsibilities:
 
-- Given IR and layout profile:
-  - Locate and extract the relevant tables for Schedule of Investments.
+- Given a parsed PDF (text per page) and a `layout_config`, locate and extract holdings from the Schedule of Investments using a **single generic extraction engine**.
 
-Pipeline:
+Extraction pipeline:
 
-1. **Locate section**:
-   - Use profile header patterns to find where “Schedule of Investments” starts.
-   - Traverse pages until the next major section header or end condition.
-2. **Detect tables**:
-   - Use table outputs from libraries (`camelot`, `tabula-py`) or coordinate heuristics.
-3. **Normalize rows**:
-   - Merge multi-line security descriptions (based on indentation/coordinates).
-   - Propagate context fields (sector, security type) from section headers like “Airlines - 0.0%”.
-4. **Handle multi-column layouts**:
-   - Split page into logical left/right regions using coordinates from profile.
-   - Process each region as a separate table while preserving ordering.
+1. **Locate anchor pages**:
+   - Scan all pages and mark those whose text contains the `schedule_header`.
+2. **Expand to full range**:
+   - Take the min and max anchor page indices for the schedule.
+   - For every page in this inclusive range, decide whether it "looks like" a holdings page (based on header fragments and numeric-line heuristics) and include it.
+3. **Column splitting**:
+   - For each selected page, split it into `N` equal-width vertical regions, where `N = layout.columns`.
+   - Process each region as an independent column/table to correctly handle 2–3 column layouts.
+4. **Line-by-line parsing**:
+   - Iterate text lines within each column region.
+   - Use `stop_line_prefixes` / `stop_line_contains` as **page-local** stop conditions.
+   - Use `noise_prefixes` to drop non-holding lines.
+5. **Multi-line row merging**:
+   - Maintain a "pending" holding while reading lines.
+   - Merge multi-line security descriptions and detect when numeric tokens indicate the end of a row.
+6. **Instrument/section headers**:
+   - Recognize instrument headers (e.g., `"COMMON STOCKS"`) and propagate `security_type` to subsequent holdings until the next header.
 
 
 ### 3.5 Field Mapping & Normalization
 
 Mapping:
 
-- Use profile’s header patterns, column indices, and section headers to map raw row cells to canonical fields.
+- Use layout config hints (token indices, instrument headers) and simple heuristics to map numeric tokens and text segments to canonical fields.
 
 Normalization tasks:
 
 - **Fund-level metadata**:
-  - Extract fund name and as-of date via regex from first pages.
+  - `fund_name`: extracted from PDF text (e.g., a line ending with `"Fund"` on early pages), with `layout_id` as a fallback if text-based guessing fails.
+  - `report_date`: extracted from the first pages using a regex that handles both spaced and compact dates (e.g., `"August 31, 2025"` and `"AUGUST31,2025"`).
 - **Numeric fields**:
-  - Strip currency symbols and commas (`$1,499,000` → `1499000.00`).
-  - Distinguish “shares” vs. “principal” when columns are combined:
-    - If security type is bond-like → treat as principal.
-    - If equity → treat as number of shares.
-- **Country and sector**:
-  - Direct mapping when explicit columns exist.
-  - Otherwise derive from section headers or external issuer mapping.
-- **Security type**:
-  - From explicit headings like “CONVERTIBLE BONDS - 0.0%”.
-  - Otherwise from rules or AI (see 3.6).
+  - Strip commas and currency symbols where present.
+  - Map numeric tokens according to `shares_token_index` and `value_token_index`.
+- **Country**:
+  - Derived from section headings and mapped to ISO3 via `COUNTRY_TO_ISO3` and `country_heading_to_iso3`.
+- **Security name normalization**:
+  - `_normalize_name` fixes common spacing issues:
+    - Insert spaces between lowercase and uppercase transitions (e.g., `"AssaAbloy"` → `"Assa Abloy"`).
+    - Normalize spaces around commas, ampersands, and parentheses (e.g., `"Toronto- Dominion Bank( The)"` → `"Toronto-Dominion Bank (The)"`).
 
 Output:
 
-- `fund_metadata`: `{ fund_name, report_date, ... }`
-- `holdings`: list of `{ security_name, security_type, country_iso3, sector, shares, principal, market_value }`
+- One `Holding` dataclass per row (`fund_extractor/models.py`) with:
+  - `fund_name`, `report_date`, `security_name`, `security_type`, `country_iso3`, `sector`, `shares`, `principal`, `market_value`.
 
 
-### 3.6 AI/ML Assistance (Targeted)
+### 3.6 AI/ML Assistance
 
-Use AI/ML **only for ambiguous or missing pieces** to contain cost.
+Use AI/ML **only for ambiguous or missing pieces** to save cost.
 
-Use cases:
+Planned use cases:
 
-- **Security type classification**:
-  - Input: security description string.
-  - Output: class such as “Convertible Bond”, “Corporate Bond”, “Equity”.
-- **Sector normalization**:
-  - Input: raw sector/industry text.
-  - Output: standardized sector (e.g., GICS-like).
+- **OCR for image-based PDFs**:
+  - Run an on-prem OCR engine (e.g., Tesseract) on pages with no extractable text.
+  - Optionally fall back to a cloud OCR/vision API for difficult documents.
+  - Feed OCR text back into the generic extraction engine.
+- **Security type and sector classification**:
+  - Input: security description, optional context.
+  - Output: normalized security type (e.g., “Convertible Bond”, “Equity”) and sector (e.g., GICS sector).
 - **Country inference**:
-  - Input: issuer name + optional context.
-  - Output: ISO3 country code with confidence.
+  - Input: issuer name + context.
+  - Output: ISO3 country code with confidence, when not obvious from headings.
+- **AI-assisted layout config generation**:
+  - Given a sample PDF’s text, have an LLM propose an initial layout config that a human can refine.
 
 Cost control:
 
 - Cache predictions per input string.
-- Batch AI calls for a set of holdings.
-- Use lighter models where possible.
+- Batch AI calls for a set of holdings or sample pages.
+- Use lighter/cheaper models where possible.
+- Limit AI usage to onboarding/config generation and rare fallbacks, not every extraction.
 
 
 ### 3.7 Validation & Quality Checks
 
-Validation framework runs over extracted data to detect errors and low-confidence results.
+Validation runs over extracted data to detect obvious errors and suspicious patterns, and to gate what is allowed into downstream systems.
 
-Field-level validation:
+Responsibilities:
 
-- Type checks:
-  - Numeric fields must parse as numbers.
-  - Currency/percentage regex patterns.
-- Presence rules:
-  - Required fields per security type (e.g., principal for bonds).
-- Range checks:
-  - No negative shares/principal/market values.
+- **Field-level validation**:
+  - Type checks (numeric fields must parse as numbers, dates must parse).
+  - Presence rules (e.g., `security_name` and at least one of `shares/principal/market_value`).
+  - Range checks (no negative shares/principal/market values for long-only funds).
+  - Format checks (valid ISO3 country codes, known sector names).
+- **Aggregate validation**:
+  - Compare sum of `market_value` by section/fund to reported totals (within tolerance).
+  - Flag outliers (e.g., extremely large positions vs. portfolio size).
 
-Cross-row / aggregate validation:
+Implementation:
 
-- Compare sum of market values by section (e.g., “Convertible Bonds”) to reported totals.
-- Compare sum of all holdings to fund-level totals within tolerance.
-- Check for outliers (e.g., extremely large or zero values).
-
-Consistency validation:
-
-- Same security (by name or identifier) should have:
-  - Consistent sector.
-  - Consistent country.
-  - Consistent security type.
-
-Outputs:
-
-- Validation issues per row/field.
-- Confidence scores adjusted based on rule outcomes.
-- Flags used by manual review UI.
+- A **validation service** (or library) that:
+  - Accepts a batch of holdings and fund metadata.
+  - Applies a configurable set of rules (some global, some per-fund layout).
+  - Outputs structured results: lists of errors, warnings, and per-row flags.
+- Results are persisted (e.g., `validation_results` table) and surfaced in APIs and the review UI.
 
 
 ### 3.8 Manual Review UI / Tooling (Concept)
@@ -254,73 +233,44 @@ Core features:
 - **Inline editing**:
   - Users adjust fields directly in the grid.
   - Changes saved to corrected dataset.
-- **Audit trail (optional)**:
-  - Track corrections and users.
 
-Prototype simplification:
-
-- Can be implemented as a simple web app (Flask/Streamlit) or notebook UI for the challenge.
-
-
-### 3.9 Export & Integration
+### 3.9 Export
 
 Formats:
 
 - JSON:
-  - One file per PDF with fund metadata and holdings list.
+  - One file per PDF containing a list of `Holding` dicts.
 - CSV:
   - Flat table containing holdings plus fund-level fields as columns.
-- Plain text (optional) for logging/debugging.
-
-Integration:
-
-- Outputs can be fed into:
-  - Data warehouse.
-  - Analytics pipelines.
-  - Portfolio management or risk systems.
 
 
-4. Steps to Onboard a New Mutual Fund
--------------------------------------
+## 4. Steps to Onboard a New Mutual Fund
 
 Onboarding workflow:
 
-1. **Collect sample PDFs** for the new fund (preferably multiple reports).
-2. **Explore layout** with generic parser:
-   - Inspect extracted tables and text to understand structure.
-3. **Identify Schedule of Investments**:
-   - Locate header text and page range.
-4. **Analyze table layout**:
-   - Number of columns.
-   - Header labels.
-   - Multi-column / cross-page behavior.
-   - Representation of sector/security type/country.
-5. **Create layout profile**:
-   - Define:
-     - Section detection patterns.
-     - Table coordinate hints if needed.
-     - Header patterns and column-to-field mappings.
-     - Rules for merged rows, totals, and continuation labels.
-6. **Test and iterate**:
-   - Run extraction on sample PDFs.
-   - Manually verify a subset of holdings.
-   - Adjust configuration.
-7. **Finalize and version**:
-   - Commit profile to version control.
-   - Add small golden datasets for regression tests.
+1. **Upload sample PDFs** for the new fund (preferably multiple reports) via a config-onboarding API.
+2. **Generate an initial layout config with AI (optional)**:
+   - A config generator service pulls the sample PDFs from object storage.
+   - It extracts representative text pages and calls an LLM to propose a draft layout config for each fund/layout.
+3. **Explore and refine the layout**:
+   - Through a web UI, analysts review the draft YAML/JSON configs.
+   - They tweak fields such as `schedule_header`, `layout.columns`, `instrument_headers`, `stop_line_prefixes`, and `noise_prefixes`.
+   - Configs are saved as new versions in a central store.
+4. **Test extraction**:
+   - Trigger test runs for the associated sample reports using the new layout config.
+   - Inspect holdings and validation results in the UI.
+5. **Iterate**:
+   - Adjust config fields until extraction and validation results are satisfactory.
+6. **Finalize and version**:
+   - Mark the config version as `active` for its layout/fund family.
 
 Scaling to hundreds of funds:
 
-- Reuse templates for fund families with similar layouts.
-- Support profile inheritance:
-  - Base profile for family; child profiles override specific details.
-- Provide a **layout wizard** to help analysts:
-  - Visually choose header row and map columns to fields.
-  - Generate initial profile automatically.
+- Reuse configs for fund families with similar layouts.
+- Use the AI-based config generator to bootstrap new configs quickly, then refine manually.
 
 
-5. Validation Framework (Detail)
---------------------------------
+## 5. Validation Framework (Detail)
 
 Rule types:
 
@@ -330,12 +280,10 @@ Rule types:
   - Security type vs. field presence (e.g., bonds should have principal).
 - **Aggregate**:
   - Section/fund totals vs. sums of row values.
-- **Cross-report (advanced)**:
-  - Compare holdings across different periods for outlier moves.
 
 Implementation:
 
-- Prefer a declarative rule representation (YAML/JSON) such as:
+- Rules can be implemented in code and optionally expressed declaratively in YAML/JSON, e.g.:
 
   - `market_value: { type: number, min: 0 }`
   - `security_type: { allowed_values: ["Equity", "Convertible Bond", "Corporate Bond", ...] }`
@@ -343,8 +291,7 @@ Implementation:
 - Allow enabling/disabling rules per layout or fund family.
 
 
-6. Performance and Cost
------------------------
+## 6. Performance and Cost
 
 Performance concerns:
 
@@ -371,113 +318,51 @@ Cost control for AI:
 - Monitor and cap per-document usage.
 
 
-7. Sequence Diagram (Textual Description)
-----------------------------------------
+## 7. Pseudocode Snippets
 
-Actors: User, Ingestion Service, Parser Engine, Layout Selector, Layout Profile Store, Validation Engine, Review UI, Exporter.
-
-Workflow:
-
-1. User uploads or schedules a PDF.
-2. Ingestion Service stores the PDF and invokes Parser Engine.
-3. Parser Engine parses the PDF into IR and extracts header text.
-4. Parser Engine calls Layout Selector with IR and header text.
-5. Layout Selector queries Layout Profile Store and returns `layout_profile_id`.
-6. Parser Engine loads the profile, locates Schedule of Investments, and extracts normalized holdings and fund metadata.
-7. Validation Engine runs validation rules and assigns flags/confidences.
-8. Exporter writes JSON/CSV outputs.
-9. (Optional) User opens Review UI:
-   - UI loads extracted data and flags.
-   - UI fetches PDF snippets for context.
-   - User corrects issues and exports final cleaned data.
-
-
-8. Pseudocode Snippets
-----------------------
-
-### 8.1 Main Pipeline
+### 7.1 Main Pipeline
 
 ```text
-function process_pdf(pdf_path_or_url):
-    pdf = download_if_needed(pdf_path_or_url)
-    ir = parse_pdf_to_ir(pdf)
+function process_pdf(pdf_path_or_url, optional_layout_id):
+    pdf = load_pdf(pdf_path_or_url)  # pdfplumber
 
-    fund_hint = extract_fund_hint(ir)
-    profile_id = select_layout_profile(fund_hint, ir)
-    profile = load_profile(profile_id)
+    if is_image_based(pdf):
+        ocr_text_by_page = ai_ocr_extract_pdf(pdf_path_or_url)  # future
+        return process_with_ocr_text(ocr_text_by_page)
 
-    soi_pages = locate_schedule_of_investments(ir, profile)
-    raw_rows = extract_tables(soi_pages, profile)
+    text_first_pages = extract_text_first_pages(pdf)
 
-    holdings = []
-    for row in raw_rows:
-        holding = map_row_to_schema(row, profile)
-        holdings.append(holding)
+    if optional_layout_id is not None:
+        cfg = load_layout_config_by_id(optional_layout_id)
+    else:
+        cfg = detect_config_for_pdf(text_first_pages, all_layout_configs)
 
-    fund_meta = extract_fund_metadata(ir, profile)
+    holdings = extract_with_layout(pdf, cfg, fund_name_hint, report_date_hint)
 
-    validated_result = validate(fund_meta, holdings)
-    export_outputs(pdf, validated_result)
+    # Write raw extraction results; validation is run as a separate step.
+    export_to_json_and_csv(holdings)
 
-    return validated_result
+    return holdings
 ```
 
-### 8.2 Layout Profile Example (YAML-style)
+### 7.2 Layout Profile Example (YAML-style)
 
 ```text
-id: hartford_balanced_income_v1
-section_header_patterns:
-  - "Schedule of Investments"
-fund_name_pattern: "^The Hartford .* Fund"
-report_date_pattern: "As of ([A-Za-z]+ \\d{1,2}, \\d{4})"
-
-tables:
-  - name: main_holdings
-    pages_from_section_start: 0-*
-    layout: two_column
-    left_table_region: { x_min: 0, x_max: 0.5 }
-    right_table_region: { x_min: 0.5, x_max: 1.0 }
-    header_row_match:
-      contains: ["Shares or Principal Amount", "Market Value"]
-    column_mappings:
-      0: security_name
-      1: principal_or_shares
-      2: market_value
-    context_from_section_headers:
-      - pattern: "Airlines -"
-        field: sector
-        value: "Airlines"
-    merge_multiline_rows: true
-    skip_rows_matching:
-      - "^Total"
-      - "continued"
+id: blackrock_international
+schedule_header: "Schedule of Investments"
+layout:
+  type: two_column_multiline_shares_first
+  columns: 2
+  shares_token_index: 0
+  value_token_index: 1
+instrument_headers:
+  COMMON STOCKS: "Common Stock"
+stop_line_prefixes:
+  - "Total Long-Term Investments"
+stop_line_contains: []
+noise_prefixes:
+  - "(Cost:$"
+  - "Other Assets"
+  - "Net Assets"
 ```
-
-
-9. Prototype Scope and Plan
----------------------------
-
-Language:
-
-- Python (for strong PDF and data-wrangling ecosystem).
-
-Libraries (example):
-
-- `pdfplumber` or `camelot` / `tabula-py` for table extraction.
-- `pandas` for tabular manipulation.
-
-MVP features:
-
-- Handle **Hartford Balanced Income Fund** sample PDF:
-  - Extract fund name and report date.
-  - Extract a subset of Schedule of Investments (e.g., Convertible Bonds section).
-  - Output holdings with: `security_name`, `security_type` (if available), `principal`, `market_value`, `sector` (where straightforward).
-- Implement a **single layout profile** for Hartford.
-- Demonstrate basic validation (non-negative market values, simple totals check).
-
-Stretch goals:
-
-- Add a second layout (GSAM or BlackRock) via another profile.
-- Implement a minimal **review interface** (simple web app or notebook UI).
-
 
