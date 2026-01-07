@@ -5,7 +5,6 @@ from typing import List
 import pdfplumber
 
 from .country_codes import country_heading_to_iso3
-from .hartford_extractor import extract_hartford_holdings
 from .layout_config import LayoutConfig
 from .models import Holding
 
@@ -68,9 +67,6 @@ def _guess_fund_name(text: str, default: str) -> str:
 def extract_with_layout(
     pdf: pdfplumber.PDF, cfg: LayoutConfig, fund_name: str, report_date: str, verbose: bool = False
 ) -> List[Holding]:
-    if cfg.layout_type == "hartford_custom":
-        return extract_hartford_holdings(pdf)
-
     holdings: List[Holding] = []
 
     # Find anchor pages that clearly belong to a Schedule of Investments
