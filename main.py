@@ -5,10 +5,10 @@ from pathlib import Path
 
 import pandas as pd
 
+from fund_extractor.ai_fallbacks import ai_extract_holdings_from_pdf, ai_ocr_extract_pdf
 from fund_extractor.generic_extractor import extract_with_layout
 from fund_extractor.ingest import load_pdf
 from fund_extractor.layout_config import detect_config_for_pdf, load_layout_configs
-from fund_extractor.ai_fallbacks import ai_extract_holdings_from_pdf
 
 
 def main() -> None:
@@ -31,6 +31,31 @@ def main() -> None:
     args = parser.parse_args()
 
     pdf = load_pdf(args.pdf)
+
+    # If pdfplumber cannot see any text on the first few pages, assume this is
+    # an image-based PDF and route through the OCR fallback (currently a stub).
+    has_text = False
+    max_pages_to_check = min(5, len(pdf.pages))
+    for idx in range(max_pages_to_check):
+        page_text = (pdf.pages[idx].extract_text() or "").strip()
+        if page_text:
+            has_text = True
+            break
+
+    if not has_text:
+        print(
+            "No extractable text found on the first pages; PDF may be image-based.\n"
+            "Attempting OCR fallback via ai_ocr_extract_pdf (currently a stub)."
+        )
+        _ocr_text_by_page = ai_ocr_extract_pdf(args.pdf, pages=range(len(pdf.pages)))
+        # For now we do not yet have an OCR-backed parser, so fail fast with a
+        # clear message. In a future iteration, this OCR text would be passed
+        # into a dedicated extraction path.
+        raise SystemExit(
+            "PDF appears to be image-based and OCR fallback is not yet implemented. "
+            "Once ai_ocr_extract_pdf is wired to a real OCR engine, this path will "
+            "feed OCR text into the extractor."
+        )
 
     # Load configs and detect fund layout
     config_dir = Path("configs")

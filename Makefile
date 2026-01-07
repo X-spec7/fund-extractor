@@ -6,7 +6,7 @@ BLACKROCK_PDF ?= ./fund_reports/blackrock.pdf
 GSAM_PDF ?= ./fund_reports/gsam.pdf
 
 
-.PHONY: venv install run-blackrock run-gsam-em gen-config clean run-postgres start-postgres stop-postgres remove-postgres dropdb createdb
+.PHONY: venv install run-blackrock run-gsam-em gen-config validate clean run-postgres start-postgres stop-postgres remove-postgres dropdb createdb
 
 run-postgres:
 	docker run --name postgres16 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:16-alpine
@@ -40,6 +40,13 @@ run-gsam-em:
 
 gen-config:
 	$(PYTHON) generate_config.py
+
+validate:
+	@if [ -z "$(FILE)" ]; then \
+		echo "Usage: make validate FILE=path/to/output.json|csv"; \
+		exit 1; \
+	fi
+	$(PYTHON) validate_output.py $(FILE) --verbose
 
 clean:
 	rm -rf $(VENV) output
