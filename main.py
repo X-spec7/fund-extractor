@@ -8,6 +8,7 @@ import pandas as pd
 from fund_extractor.generic_extractor import extract_with_layout
 from fund_extractor.ingest import load_pdf
 from fund_extractor.layout_config import detect_config_for_pdf, load_layout_configs
+from fund_extractor.ai_fallbacks import ai_extract_holdings_from_pdf
 
 
 def main() -> None:
@@ -100,7 +101,22 @@ def main() -> None:
     else:
         args.out_csv.parent.mkdir(parents=True, exist_ok=True)
 
-    holdings = extract_with_layout(pdf, cfg, fund_name=fund_name, report_date=report_date, verbose=args.verbose)
+    holdings = extract_with_layout(
+        pdf,
+        cfg,
+        fund_name=fund_name,
+        report_date=report_date,
+        verbose=args.verbose,
+    )
+
+    if not holdings and args.verbose:
+        # Placeholder: future AI-based direct extraction fallback.
+        # The current implementation is a stub and always returns [].
+        _ai_holdings = ai_extract_holdings_from_pdf(
+            args.pdf,
+            fund_name=fund_name,
+            report_date=report_date,
+        )
 
     data = [h.__dict__ for h in holdings]
     args.out_json.write_text(json.dumps(data, indent=2))
