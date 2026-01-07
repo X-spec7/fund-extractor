@@ -6,7 +6,25 @@ BLACKROCK_PDF ?= ./fund_reports/blackrock.pdf
 GSAM_PDF ?= ./fund_reports/gsam.pdf
 
 
-.PHONY: venv install run-blackrock run-gsam-em gen-config clean
+.PHONY: venv install run-blackrock run-gsam-em gen-config clean run-postgres start-postgres stop-postgres remove-postgres dropdb createdb
+
+run-postgres:
+	docker run --name postgres16 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:16-alpine
+
+start-postgres:
+	docker start postgres16
+
+stop-postgres:
+	docker stop postgres16
+
+remove-postgres:
+	docker rm -f postgres16
+
+dropdb:
+	docker exec -it postgres16 dropdb fund-extractor
+
+createdb:
+	docker exec -it postgres16 createdb --username=root --owner=root fund-extractor
 
 venv:
 	python3 -m venv $(VENV)
