@@ -1,0 +1,50 @@
+@startuml ExtractionPipeline
+
+actor Admin as A
+participant "Admin UI / CLI" as UI
+participant "Ingestion & Orchestrator\n(monolith)" as ING
+database "PostgreSQL\n(reports, configs,\nvalidation)" as DB
+collections "Object Storage\n(PDFs, OCR text)" as OBJ
+queue "Job Queue\n(in-DB or Redis)" as Q
+participant "Extraction Worker\n(monolith module)" as W
+participant "OCR Engine\n(Tesseract / API)" as OCR
+participant "Layout Config Store\n(YAML/DB)" as CFG
+participant "Validation Service\n(monolith module)" as VAL
+
+A -> UI: Upload fund report PDF\n(or select existing report)
+UI -> ING: POST /reports (PDF or URL)
+ING -> OBJ: Store raw PDF
+ING -> DB: Insert report metadata\n(fund_family, object_url, status=\"queued\")
+ING -> Q: Enqueue extraction job\n(report_id)
+
+== Async extraction job ==
+W -> DB: Fetch queued job + report metadata
+W -> OBJ: Load PDF by object_url
+W -> W: Detect if image-based\n(is_image_based)
+
+alt Image-based PDF
+  W -> OCR: Run OCR on pages\n(no extractable text)
+  OCR --> W: OCR text by page
+  W -> W: Build per-page text from OCR\nprocess_with_ocr_text(...)
+else Text-based PDF
+  W -> W: Extract text by page\n(pdfplumber / pdfminer)
+end
+
+W -> CFG: Load layout configs
+W -> W: Detect layout_id\n(detect_config_for_pdf)
+W -> CFG: Load selected layout_config
+
+W -> W: extract_with_layout(pdf, layout_config)\n(page range detection,\ncolumn splitting,\nmultiline merging,\nfield normalization)
+W -> DB: Persist raw holdings\n(optional, per design)
+W -> OBJ: Write JSON/CSV outputs\n(one file per report)
+
+W -> VAL: validate_holdings(holdings)\n(field + aggregate checks)
+VAL --> W: Validation results\n(errors, warnings, flags)
+
+W -> DB: Store validation_results\nand update report status\n(\"completed\" / \"needs_review\")
+
+ING -> UI: Expose report status,\noutputs, and validation summary\nvia API for manual review
+
+@enduml
+
+
