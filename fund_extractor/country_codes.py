@@ -36,11 +36,19 @@ COUNTRY_TO_ISO3 = {
 def country_heading_to_iso3(heading: str) -> str | None:
     """
     Map a heading like 'Canada—6.5%' or 'Brazil–5.4%' to an ISO3 code, if known.
+
+    This implementation scans the full line and looks for a known country name
+    immediately followed by a dash (–, — or -), which is how country headings
+    typically appear in the PDF schedules.
     """
-    # Normalize various dash characters and strip percentages
-    base = heading.split("—")[0].split("–")[0].strip()
-    if not base:
-        return None
-    return COUNTRY_TO_ISO3.get(base)
+    import re
+
+    for name, iso in COUNTRY_TO_ISO3.items():
+        # \b ensures we're matching the whole country name, not a substring,
+        # and we allow optional whitespace before the dash.
+        pattern = rf"\b{name}\b\s*[—\-–]"
+        if re.search(pattern, heading):
+            return iso
+    return None
 
 

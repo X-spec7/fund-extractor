@@ -7,7 +7,7 @@ from .country_codes import country_heading_to_iso3
 from .models import Holding
 
 
-BLACKROCK_FUND_NAME_PATTERN = re.compile(r"BlackRock International Fund", re.IGNORECASE)
+BLACKROCK_FUND_NAME_PATTERN = re.compile(r"BlackRock\s*International\s*Fund", re.IGNORECASE)
 BLACKROCK_DATE_PATTERN = re.compile(
     r"(January|February|March|April|May|June|July|August|September|October|November|December)\s*\.?\s*\d{1,2},\s*\d{4}",
     re.IGNORECASE,
@@ -16,10 +16,29 @@ BLACKROCK_DATE_PATTERN = re.compile(
 
 def _extract_fund_name_and_date(pdf: pdfplumber.PDF) -> tuple[str, str]:
     text = pdf.pages[0].extract_text() or ""
-    fund_match = BLACKROCK_FUND_NAME_PATTERN.search(text)
+    # Some PDFs remove spaces, so search on a whitespace-stripped version.
+    fund_match = BLACKROCK_FUND_NAME_PATTERN.search(text.replace(" ", ""))
     date_match = BLACKROCK_DATE_PATTERN.search(text)
-    fund_name = fund_match.group(0).strip() if fund_match else ""
-    report_date = date_match.group(0).strip() if date_match else ""
+
+    fund_name = "BlackRock International Fund"
+    if fund_match:
+        fund_name = "BlackRock International Fund"
+
+    report_date = ""
+    if date_match:
+        raw = date_match.group(0).strip()
+        # Normalize formats like 'AUGUST31,2025' to 'August 31, 2025'
+        m = re.match(
+            r"(January|February|March|April|May|June|July|August|September|October|November|December)\s*(\d{1,2}),\s*(\d{4})",
+            raw,
+            re.IGNORECASE,
+        )
+        if m:
+            month, day, year = m.groups()
+            report_date = f"{month.title()} {int(day)}, {year}"
+        else:
+            report_date = raw
+
     return fund_name, report_date
 
 
@@ -42,6 +61,20 @@ def _parse_number(raw: str) -> Optional[float]:
         return float(cleaned)
     except ValueError:
         return None
+
+
+def _normalize_security_name(name: str) -> str:
+    """
+    Heuristically re-insert spaces that are often missing in the PDF text, e.g.
+    'AssaAbloyAB,ClassB' -> 'Assa Abloy AB, Class B'.
+    """
+    # Space between lowercase letter and uppercase letter
+    name = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", name)
+    # Space after comma if missing
+    name = re.sub(r",(?=[A-Za-z])", ", ", name)
+    # Collapse multiple spaces
+    name = re.sub(r"\\s{2,}", " ", name)
+    return name.strip()
 
 
 def extract_blackrock_international(pdf: pdfplumber.PDF) -> List[Holding]:
@@ -71,20 +104,17 @@ def extract_blackrock_international(pdf: pdfplumber.PDF) -> List[Holding]:
             if not line:
                 continue
 
-            # Detect section headers
+            # Detect section headers (but do not skip line; it may also carry a country heading)
             if line.startswith("CommonStocks"):
                 current_security_type = "Common Stock"
-                continue
             if line.startswith("MoneyMarketFunds"):
                 current_security_type = "Money Market Fund"
+            # Country headings like 'Canada—6.5%' or 'Sweden—5.2%'
+            iso = country_heading_to_iso3(line)
+            if iso:
+                current_country_heading = line
+                current_country_iso3 = iso
                 continue
-            if "—" in line or "-" in line:
-                # Likely a country heading like "Canada—6.5%"
-                iso = country_heading_to_iso3(line)
-                if iso:
-                    current_country_heading = line
-                    current_country_iso3 = iso
-                    continue
 
             # Skip header and total lines
             if line.startswith("Security Shares Value") or line.startswith("Total"):
@@ -106,6 +136,7 @@ def extract_blackrock_international(pdf: pdfplumber.PDF) -> List[Holding]:
             market_value = _parse_number(second_token)
 
             security_name = line[:first_idx].rstrip(". ").strip()
+            security_name = _normalize_security_name(security_name)
             if not security_name:
                 continue
 

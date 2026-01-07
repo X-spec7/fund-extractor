@@ -11,7 +11,7 @@ GSAM_PDF ?= /root/test/fund-extractor/fund-reports/gsam.pdf
 venv:
 	python3 -m venv $(VENV)
 
-install: venv
+install: venv 
 	$(PIP) install -r requirements.txt
 
 run-hartford:
