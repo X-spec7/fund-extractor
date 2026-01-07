@@ -38,40 +38,67 @@ def _normalize_name(name: str) -> str:
     return name.strip()
 
 
-def extract_with_layout(pdf: pdfplumber.PDF, cfg: LayoutConfig, fund_name: str, report_date: str) -> List[Holding]:
+def _contains_normalized(haystack: str, needle: str) -> bool:
+    """
+    Return True if 'needle' is found in 'haystack', ignoring whitespace
+    differences and case. This helps when headers are broken by newlines
+    or multiple spaces (e.g. 'Schedule of\\nInvestments').
+    """
+    if not haystack or not needle:
+        return False
+    h = re.sub(r"\s+", "", haystack).lower()
+    n = re.sub(r"\s+", "", needle).lower()
+    return n in h
+
+
+def _guess_fund_name(text: str, default: str) -> str:
+    """
+    Best-effort extraction of fund name from page text.
+    For GSAM/BlackRock-style reports, the fund name usually appears
+    as a single line ending with 'Fund'.
+    """
+    if not text:
+        return default
+    m = re.search(r"(?im)^(.*Fund)\s*$", text)
+    if m:
+        return m.group(1).strip()
+    return default
+
+
+def extract_with_layout(
+    pdf: pdfplumber.PDF, cfg: LayoutConfig, fund_name: str, report_date: str, verbose: bool = False
+) -> List[Holding]:
     if cfg.layout_type == "hartford_custom":
         return extract_hartford_holdings(pdf)
 
     holdings: List[Holding] = []
 
-    # Find anchor pages that clearly belong to this fund's Schedule of Investments
+    # Find anchor pages that clearly belong to a Schedule of Investments
+    # for this layout. We use only the schedule header here so that a
+    # single layout config can cover multiple funds in the same PDF
+    # (e.g. multiple GSAM funds sharing the same table format).
     anchor_pages: List[int] = []
-    name_patterns = [re.compile(p, re.IGNORECASE) for p in (cfg.fund_name_patterns or [])]
-
     for idx, page in enumerate(pdf.pages):
         text = page.extract_text() or ""
-        if cfg.schedule_header not in text:
-            continue
-
-        if not name_patterns:
+        if _contains_normalized(text, cfg.schedule_header):
             anchor_pages.append(idx)
-            continue
 
-        text_nospace = text.replace(" ", "")
-        for patt in name_patterns:
-            if patt.search(text) or patt.search(text_nospace):
-                anchor_pages.append(idx)
-                break
+    if verbose:
+        print(f"[layout:{cfg.id}] anchor pages with header+fund match: {sorted(anchor_pages)}")
 
     # If no anchors found, fall back to simple header-based detection
     if not anchor_pages:
-        schedule_pages: List[int] = [
-            idx
-            for idx, page in enumerate(pdf.pages)
-            if (page.extract_text() or "").find(cfg.schedule_header) != -1
-        ]
+        schedule_pages: List[int] = []
+        for idx, page in enumerate(pdf.pages):
+            text = page.extract_text() or ""
+            if _contains_normalized(text, cfg.schedule_header):
+                schedule_pages.append(idx)
+        if verbose:
+            print(f"[layout:{cfg.id}] no anchors found; schedule pages (header only): {schedule_pages}")
     else:
-        # Start with anchor pages, then fill in plausible continuation pages
+        # Start with anchor pages, then examine the full contiguous range
+        # between the first and last anchor page and include any pages that
+        # look like they contain holdings.
         schedule_pages_set = set(anchor_pages)
 
         def page_looks_like_holdings(text: str) -> bool:
@@ -94,25 +121,30 @@ def extract_with_layout(pdf: pdfplumber.PDF, cfg: LayoutConfig, fund_name: str, 
             return False
 
         anchors_sorted = sorted(anchor_pages)
-        num_pages = len(pdf.pages)
+        range_start = anchors_sorted[0]
+        range_end = anchors_sorted[-1]
 
-        # Fill gaps between anchors
-        for i in range(len(anchors_sorted) - 1):
-            start = anchors_sorted[i]
-            end = anchors_sorted[i + 1]
-            for idx in range(start + 1, end):
-                if idx in schedule_pages_set:
-                    continue
-                text = pdf.pages[idx].extract_text() or ""
-                if page_looks_like_holdings(text):
-                    schedule_pages_set.add(idx)
+        for idx in range(range_start, range_end + 1):
+            if idx in schedule_pages_set:
+                continue
+            text = pdf.pages[idx].extract_text() or ""
+            if page_looks_like_holdings(text):
+                schedule_pages_set.add(idx)
 
         schedule_pages = sorted(schedule_pages_set)
 
+        if verbose:
+            print(f"[layout:{cfg.id}] final schedule page range {range_start}-{range_end}: {schedule_pages}")
+
     current_security_type: str | None = None
+
+    if verbose:
+        print(f"[layout:{cfg.id}] parsing pages: {schedule_pages}")
 
     for page_idx in schedule_pages:
         page = pdf.pages[page_idx]
+        page_text = page.extract_text() or ""
+        page_fund_name = _guess_fund_name(page_text, fund_name)
         width = page.width
         height = page.height
 
@@ -165,7 +197,7 @@ def extract_with_layout(pdf: pdfplumber.PDF, cfg: LayoutConfig, fund_name: str, 
                         return None
                     holdings.append(
                         Holding(
-                            fund_name=fund_name,
+                            fund_name=page_fund_name,
                             report_date=report_date,
                             security_name=name,
                             security_type=current_security_type,
@@ -331,7 +363,7 @@ def extract_with_layout(pdf: pdfplumber.PDF, cfg: LayoutConfig, fund_name: str, 
 
                     holdings.append(
                         Holding(
-                            fund_name=fund_name,
+                            fund_name=page_fund_name,
                             report_date=report_date,
                             security_name=security_name,
                             security_type=current_security_type,

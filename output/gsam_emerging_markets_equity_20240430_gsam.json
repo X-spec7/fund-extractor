@@ -1,6 +1,831 @@
 [
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Aier Eye Hospital Group Co. Ltd., Class A( Health Care Equipment& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 99816.0,
+    "principal": null,
+    "market_value": 176979.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Alibaba Group Holding Ltd. ( Consumer Discretionary Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 166076.0,
+    "principal": null,
+    "market_value": 1554980.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Anji Microelectronics Technology Shanghai Co. Ltd., Class A( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 14134.0,
+    "principal": null,
+    "market_value": 320947.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "ANTTTASports Products Ltd. ( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 57200.0,
+    "principal": null,
+    "market_value": 647561.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Baidu, Inc., Class A( Media& Entertainment)*",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 39050.0,
+    "principal": null,
+    "market_value": 505916.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Bankof Jiangsu Co. Ltd., Class A( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 603800.0,
+    "principal": null,
+    "market_value": 671979.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Bankof Ningbo Co. Ltd., Class A( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 100341.0,
+    "principal": null,
+    "market_value": 316286.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "BYDCo. Ltd., Class A ( Automobiles& Components)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 8800.0,
+    "principal": null,
+    "market_value": 263750.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "BYDCo. Ltd., Class H ( Automobiles& Components)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 18000.0,
+    "principal": null,
+    "market_value": 493426.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "China Merchants Bank Co. Ltd., Class A( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 137400.0,
+    "principal": null,
+    "market_value": 647181.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "China Merchants Bank Co. Ltd., Class H( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 152000.0,
+    "principal": null,
+    "market_value": 658290.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "China Petroleum& Chemical Corp., Class H( Energy)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 1506000.0,
+    "principal": null,
+    "market_value": 898934.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "China Resources Sanjiu Medical& Pharmaceutical Co. Ltd., Class A( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 34200.0,
+    "principal": null,
+    "market_value": 282749.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "China Tower Corp. Ltd., Class H( Telecommunication Services)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 2500000.0,
+    "principal": null,
+    "market_value": 292648.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "China Yangtze Power Co. Ltd., Class A( Utilities)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 273500.0,
+    "principal": null,
+    "market_value": 972409.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "CITICSecurities Co. Ltd., Class H( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 206000.0,
+    "principal": null,
+    "market_value": 327976.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Contemporary Amperex Technology Co. Ltd., Class A ( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 36436.0,
+    "principal": null,
+    "market_value": 1017351.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "East Money Information Co. Ltd., Class A( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 174691.0,
+    "principal": null,
+    "market_value": 312821.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Fuyao Glass Industry Group Co. Ltd., Class A( Automobiles& Components)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 96280.0,
+    "principal": null,
+    "market_value": 660851.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "HWWWorld Group Ltd.( Consumer Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 58000.0,
+    "principal": null,
+    "market_value": 215799.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "HWWWorld Group Ltd. ADR ( Consumer Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 4018.0,
+    "principal": null,
+    "market_value": 147501.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Haidilao International Holding Ltd.( Consumer Services)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 122000.0,
+    "principal": null,
+    "market_value": 275257.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Hualan Biological Engineering, Inc., Class A( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 113700.0,
+    "principal": null,
+    "market_value": 304709.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Inner Mongolia Yili Industrial Group Co. Ltd., Class A( Fooddd, Beverage& TTTobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 91000.0,
+    "principal": null,
+    "market_value": 357999.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Innooovent Biologics, Inc.( Pharmaceuticals, Biotechnology& Life Sciences)*(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 50500.0,
+    "principal": null,
+    "market_value": 244469.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "JD.com, Inc., Class A ( Consumer Discretionary Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 47150.0,
+    "principal": null,
+    "market_value": 679355.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Jiangsu Expresswaaay Co. Ltd., Class A( Transportation)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 231900.0,
+    "principal": null,
+    "market_value": 354546.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Jiangsu Hengrui Pharmaceuticals Co. Ltd., Class A( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 71496.0,
+    "principal": null,
+    "market_value": 453232.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "KEHoldings, Inc. ADR ( Real Estate Management& Development)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 8954.0,
+    "principal": null,
+    "market_value": 135384.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Kingdee International Software Group Co. Ltd.( Software& Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 130000.0,
+    "principal": null,
+    "market_value": 137153.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Kweichow Moutai Co. Ltd., Class A( Fooddd, Beverage& Tobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 7219.0,
+    "principal": null,
+    "market_value": 1689671.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Li Auto, Inc., Class A ( Automobiles& Components)*",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 19300.0,
+    "principal": null,
+    "market_value": 252867.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Meituan, Class B( Consumer Services)*(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 65790.0,
+    "principal": null,
+    "market_value": 898332.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Midea Group Co. Ltd., Class A ( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 79500.0,
+    "principal": null,
+    "market_value": 763284.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Montage Technology Co. Ltd., Class A( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 37833.0,
+    "principal": null,
+    "market_value": 262302.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "NARITechnology Co. Ltd., Class A( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 147036.0,
+    "principal": null,
+    "market_value": 474745.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Ningbo Tuopu Group Co. Ltd., Class A( Automobiles& Components)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 33150.0,
+    "principal": null,
+    "market_value": 284763.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "PDDHoldings, Inc. ADR ( Consumer Discretionary Distribution& Retail)*",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 3896.0,
+    "principal": null,
+    "market_value": 487701.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Petro China Co. Ltd., Class H ( Energy)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 720000.0,
+    "principal": null,
+    "market_value": 670854.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "PICCProperty& Casualty Co. Ltd., Class H( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 418000.0,
+    "principal": null,
+    "market_value": 519316.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Ping An Insurance Group Co.of China Ltd., Class A( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 62700.0,
+    "principal": null,
+    "market_value": 355803.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Ping An Insurance Group Co.of China Ltd., Class H( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 115500.0,
+    "principal": null,
+    "market_value": 523456.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Postal Saaavings Bankof China Co. Ltd., Class A( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 1172055.0,
+    "principal": null,
+    "market_value": 774314.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "SGMicro Corp., Class A( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 27650.0,
+    "principal": null,
+    "market_value": 291527.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Shenzhen Inooovance Technology Co. Ltd., Class A( Capital Goods) Theaccompanyingnotesareanintegralpartofthesefinancialstatements.",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 37678.0,
+    "principal": null,
+    "market_value": 17.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Shenzhen Mindraaay Bio- Medical Electronics Co. Ltd., Class A ( Health Care Equipment& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 11000.0,
+    "principal": null,
+    "market_value": 461086.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sieyuan Electric Co. Ltd., Class A( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 46000.0,
+    "principal": null,
+    "market_value": 412034.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sinotrans Ltd., Class A ( TTTransportation)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 374100.0,
+    "principal": null,
+    "market_value": 302737.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sungrow Power Supply Co. Ltd., Class A( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 18012.0,
+    "principal": null,
+    "market_value": 255360.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sunresin New Materials Co. Ltd., Class A( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 34149.0,
+    "principal": null,
+    "market_value": 219272.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Tencent Holdings Ltd.( Media & Entertainment)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 83300.0,
+    "principal": null,
+    "market_value": 3655471.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Tencent Music Entertainment Group ADR( Media& Entertainment)*",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 21515.0,
+    "principal": null,
+    "market_value": 270013.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Trip.com Group Ltd.( Consumer Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 17200.0,
+    "principal": null,
+    "market_value": 837767.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Tsingtao Brewery Co. Ltd., Class H( Fooddd, Beverage& Tobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 50000.0,
+    "principal": null,
+    "market_value": 360320.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Venustech Group, Inc., Class A ( Software& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 78500.0,
+    "principal": null,
+    "market_value": 211956.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Wanhua Chemical Group Co. Ltd., Class A( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 19498.0,
+    "principal": null,
+    "market_value": 238461.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Weichai Power Co. Ltd., Class A( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 248698.0,
+    "principal": null,
+    "market_value": 595624.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Wens Foodstuffffs Group Co. Ltd., Class A( Fooddd, Beverage& Tobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 86966.0,
+    "principal": null,
+    "market_value": 229953.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Will Semiconductor Co. Ltd. Shanghai, Class A( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 25139.0,
+    "principal": null,
+    "market_value": 350676.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Wu Xi App TTTec Co. Ltd., Class H( Pharmaceuticals, Biotechnology& Life Sciences)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 20228.0,
+    "principal": null,
+    "market_value": 91048.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Xiaomi Corp., Class B ( TTTechnology Hardware& Equipment)*(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 321400.0,
+    "principal": null,
+    "market_value": 700629.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Yifeng Pharmacy Chain Co. Ltd., Class A( Consumer Staples Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 46528.0,
+    "principal": null,
+    "market_value": 280952.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Yunnan Aluminium Co. Ltd., Class A( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 284070.0,
+    "principal": null,
+    "market_value": 559584.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Zhejiang Sanhua Intelligent Controls Co. Ltd., Class A ( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 46719.0,
+    "principal": null,
+    "market_value": 140792.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Zhongji Innolight Co. Ltd., Class A( Technology Hardware & Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 20600.0,
+    "principal": null,
+    "market_value": 518364.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Zijin Mining Group Co. Ltd., Class H( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 544000.0,
+    "principal": null,
+    "market_value": 1186720.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "ZTOExpress Caaayman, Inc. ADR( TTTransportation)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 21801.0,
+    "principal": null,
+    "market_value": 35222857.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "AIAGroup Ltd.( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "HKG",
+    "sector": null,
+    "shares": 16200.0,
+    "principal": null,
+    "market_value": 118655.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "ASMPTLtd.( Semiconductors & Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "HKG",
+    "sector": null,
+    "shares": 20500.0,
+    "principal": null,
+    "market_value": 254767.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Hong Kong Exchanges& Clearing Ltd.( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "HKG",
+    "sector": null,
+    "shares": 5901.0,
+    "principal": null,
+    "market_value": 187501.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sino Biopharmaceutical Ltd.( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "HKG",
+    "sector": null,
+    "shares": 121500.0,
+    "principal": null,
+    "market_value": 41516.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sino Land Co. Ltd.( Real Estate Management& Development)",
+    "security_type": "Common Stock",
+    "country_iso3": "HKG",
+    "sector": null,
+    "shares": 168000.0,
+    "principal": null,
+    "market_value": 179626.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Techtronic Industries Co. Ltd. ( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "HKG",
+    "sector": null,
+    "shares": 9500.0,
+    "principal": null,
+    "market_value": 913348.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Chroma ATE, Inc.( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 36000.0,
+    "principal": null,
+    "market_value": 292382.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS CHINA EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Jentech Precision Industrial Co. Ltd.( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 13000.0,
+    "principal": null,
+    "market_value": 36815368.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Caixa Seguridade Participacoes SA( Insurance)",
     "security_type": "Common Stock",
@@ -11,7 +836,7 @@
     "market_value": 8427976.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Fleury SA( Health Care Equipment& Services)",
     "security_type": "Common Stock",
@@ -22,7 +847,7 @@
     "market_value": 8638196.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Mercado Libre, Inc.( Consumer Discretionary Distribution& Retail)*",
     "security_type": "Common Stock",
@@ -33,7 +858,7 @@
     "market_value": 32642789.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "NUHoldings Ltd., Class A ( Banks)*",
     "security_type": "Common Stock",
@@ -44,7 +869,7 @@
     "market_value": 18597403.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Odontoprev SA( Health Care Equipment& Services)",
     "security_type": "Common Stock",
@@ -55,7 +880,7 @@
     "market_value": 2912844.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "PRIOSA( Energy)",
     "security_type": "Common Stock",
@@ -66,7 +891,7 @@
     "market_value": 9261488.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Raia Drogasil SA( Consumer Staples Distribution& Retail)",
     "security_type": "Common Stock",
@@ -77,7 +902,7 @@
     "market_value": 10421956.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Rumo SA( TTTransportation)*",
     "security_type": "Common Stock",
@@ -88,7 +913,7 @@
     "market_value": 9539563.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Sendas Distribuidora SA ( Consumer Staples Distribution & Retail)*",
     "security_type": "Common Stock",
@@ -99,7 +924,7 @@
     "market_value": 14384852.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "TIMSA( TTTelecommunication Services)",
     "security_type": "Common Stock",
@@ -110,7 +935,7 @@
     "market_value": 13810993.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "TOTVSSA( Software& Services)",
     "security_type": "Common Stock",
@@ -121,7 +946,7 @@
     "market_value": 12327393.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Vivara Participacoes SA ( Consumer Durables& Apparel)",
     "security_type": "Common Stock",
@@ -132,7 +957,7 @@
     "market_value": 145051264.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Alibaba Group Holding Ltd. ( Consumer Discretionary Distribution& Retail)",
     "security_type": "Common Stock",
@@ -143,7 +968,7 @@
     "market_value": 80824070.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "ANTTTASports Products Ltd. ( Consumer Durables& Apparel)",
     "security_type": "Common Stock",
@@ -154,7 +979,7 @@
     "market_value": 23255583.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "BYDCo. Ltd., Class H ( Automobiles& Components)",
     "security_type": "Common Stock",
@@ -165,7 +990,7 @@
     "market_value": 24904332.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "China Merchants Bank Co. Ltd., Class H( Banks)",
     "security_type": "Common Stock",
@@ -176,7 +1001,7 @@
     "market_value": 39696641.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "China Yangtze Power Co. Ltd., Class A( Utilities)",
     "security_type": "Common Stock",
@@ -187,7 +1012,7 @@
     "market_value": 13374734.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Contemporary Amperex Technology Co. Ltd., Class A ( Capital Goods)",
     "security_type": "Common Stock",
@@ -198,7 +1023,7 @@
     "market_value": 24614956.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Fuyao Glass Industry Group Co. Ltd., Class H( Automobiles& Components)(a)",
     "security_type": "Common Stock",
@@ -209,7 +1034,7 @@
     "market_value": 18533553.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Hualan Biological Engineering, Inc., Class A( Pharmaceuticals, Biotechnology& Life Sciences)",
     "security_type": "Common Stock",
@@ -220,7 +1045,7 @@
     "market_value": 10185910.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "KEHoldings, Inc. ADR ( Real Estate Management& Development)",
     "security_type": "Common Stock",
@@ -231,7 +1056,7 @@
     "market_value": 16862520.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Kweichow Moutai Co. Ltd., Class A( Fooddd, Beverage& Tobacco)",
     "security_type": "Common Stock",
@@ -242,7 +1067,7 @@
     "market_value": 65220750.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Meituan, Class B( Consumer Services)*(a)",
     "security_type": "Common Stock",
@@ -253,7 +1078,7 @@
     "market_value": 41389615.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Midea Group Co. Ltd., Class A ( Consumer Durables& Apparel)",
     "security_type": "Common Stock",
@@ -264,7 +1089,7 @@
     "market_value": 17361590.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "NARITechnology Co. Ltd., Class A( Capital Goods)",
     "security_type": "Common Stock",
@@ -275,7 +1100,7 @@
     "market_value": 10265212.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "PICCProperty& Casualty Co. Ltd., Class H( Insurance)",
     "security_type": "Common Stock",
@@ -286,7 +1111,7 @@
     "market_value": 16347280.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Ping An Insurance Group Co.of China Ltd., Class H( Insurance)",
     "security_type": "Common Stock",
@@ -297,7 +1122,7 @@
     "market_value": 19827864.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Ping An Insurance Group Co.of China Ltd., Class H( Insurance)",
     "security_type": "Common Stock",
@@ -308,7 +1133,7 @@
     "market_value": 3514631.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Shenzhen Mindraaay Bio- Medical Electronics Co. Ltd., Class A ( Health Care Equipment& Services)",
     "security_type": "Common Stock",
@@ -319,7 +1144,7 @@
     "market_value": 16570959.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Shenzhou International Group Holdings Ltd.( Consumer Durables& Apparel)",
     "security_type": "Common Stock",
@@ -330,7 +1155,7 @@
     "market_value": 20595148.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Silergy Corp.( Semiconductors & Semiconductor Equipment)",
     "security_type": "Common Stock",
@@ -341,7 +1166,7 @@
     "market_value": 17995768.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Sunresin New Materials Co. Ltd., Class A( Materials)",
     "security_type": "Common Stock",
@@ -352,7 +1177,7 @@
     "market_value": 10759999.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Tencent Holdings Ltd.( Media & Entertainment)",
     "security_type": "Common Stock",
@@ -363,7 +1188,7 @@
     "market_value": 152327365.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Tencent Music Entertainment Group ADR( Media& Entertainment)*",
     "security_type": "Common Stock",
@@ -374,7 +1199,7 @@
     "market_value": 11617435.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Weichai Power Co. Ltd., Class H( Capital Goods)",
     "security_type": "Common Stock",
@@ -385,7 +1210,7 @@
     "market_value": 17397192.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Will Semiconductor Co. Ltd. Shanghai, Class A( Semiconductors& Semiconductor Equipment)",
     "security_type": "Common Stock",
@@ -396,7 +1221,7 @@
     "market_value": 15729678.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Yunnan Aluminium Co. Ltd., Class A( Materials)",
     "security_type": "Common Stock",
@@ -407,7 +1232,7 @@
     "market_value": 23100789.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Zhejiang Sanhua Intelligent Controls Co. Ltd., Class A ( Capital Goods)",
     "security_type": "Common Stock",
@@ -418,7 +1243,7 @@
     "market_value": 9427668.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Zhongji Innolight Co. Ltd., Class A( Technology Hardware & Equipment)",
     "security_type": "Common Stock",
@@ -429,7 +1254,7 @@
     "market_value": 15893054.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Zijin Mining Group Co. Ltd., Class H( Materials)",
     "security_type": "Common Stock",
@@ -440,7 +1265,7 @@
     "market_value": 15257212.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "ZTOExpress Caaayman, Inc. ADR( TTTransportation)",
     "security_type": "Common Stock",
@@ -451,7 +1276,7 @@
     "market_value": 767836542.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Commercial International Bank - Egypt( CIB), GDR( Banks)",
     "security_type": "Common Stock",
@@ -462,7 +1287,7 @@
     "market_value": 12644099.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "JUMBOSA( Consumer Discretionary Distribution& Retail)",
     "security_type": "Common Stock",
@@ -473,7 +1298,7 @@
     "market_value": 16264805.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Mytilineos SA( Capital Goods)",
     "security_type": "Common Stock",
@@ -484,7 +1309,7 @@
     "market_value": 8679937.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "National Bankof Greece SA ( Banks)*",
     "security_type": "Common Stock",
@@ -495,7 +1320,7 @@
     "market_value": 34195919.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Piraeus Financial Holdings SA ( Banks)*",
     "security_type": "Common Stock",
@@ -506,7 +1331,7 @@
     "market_value": 70593771.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Amber Enterprises India Ltd.( Consumer Durables& Apparel)*",
     "security_type": "Common Stock",
@@ -517,7 +1342,7 @@
     "market_value": 10027168.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Apollo Hospitals Enterprise Ltd.( Health Care Equipment& Services)",
     "security_type": "Common Stock",
@@ -528,7 +1353,7 @@
     "market_value": 19088399.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Axis Bank Ltd.( Banks)",
     "security_type": "Common Stock",
@@ -539,7 +1364,7 @@
     "market_value": 34115657.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Bajaj Finance Ltd.( Financial Services)",
     "security_type": "Common Stock",
@@ -550,7 +1375,7 @@
     "market_value": 22198261.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Cartrade Tech Ltd.( Consumer Discretionary Distribution& Retail)*",
     "security_type": "Common Stock",
@@ -561,7 +1386,7 @@
     "market_value": 4450332.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Coforge Ltd.( Software& Services)",
     "security_type": "Common Stock",
@@ -572,7 +1397,7 @@
     "market_value": 15312166.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Computer Age Management Services Ltd.( Commercial& Professional Services)",
     "security_type": "Common Stock",
@@ -583,7 +1408,7 @@
     "market_value": 22286399.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Craftsman Automation Ltd. ( Capital Goods)",
     "security_type": "Common Stock",
@@ -594,7 +1419,7 @@
     "market_value": 6405464.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Five- Star Business Finance Ltd. ( Financial Services)*",
     "security_type": "Common Stock",
@@ -605,7 +1430,7 @@
     "market_value": 9371559.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Godrej Properties Ltd. ( Real Estate Management& Development)*",
     "security_type": "Common Stock",
@@ -616,7 +1441,7 @@
     "market_value": 27740583.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "ICICIBank Ltd.( Banks)",
     "security_type": "Common Stock",
@@ -627,7 +1452,7 @@
     "market_value": 66080541.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Info Edge India Ltd.( Media& Entertainment)",
     "security_type": "Common Stock",
@@ -638,7 +1463,7 @@
     "market_value": 14823617.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Infosys Ltd.( Software& Services)",
     "security_type": "Common Stock",
@@ -649,7 +1474,7 @@
     "market_value": 27940779.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Jio Financial Services Ltd. ( Financial Services)*",
     "security_type": "Common Stock",
@@ -660,7 +1485,7 @@
     "market_value": 20138527.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Naaavin Fluorine International Ltd.( Materials)",
     "security_type": "Common Stock",
@@ -671,7 +1496,7 @@
     "market_value": 12278914.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Netweb Technologies India Ltd.( TTTechnology Hardware& Equipment)*",
     "security_type": "Common Stock",
@@ -682,7 +1507,7 @@
     "market_value": 11778635.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "SBILife Insurance Co. Ltd. ( Insurance)(a)",
     "security_type": "Common Stock",
@@ -693,7 +1518,7 @@
     "market_value": 20340492.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Sona Blllw Precision Forgings Ltd.( Automobiles& Components)(a)",
     "security_type": "Common Stock",
@@ -704,7 +1529,7 @@
     "market_value": 16331066.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Sun Pharmaceutical Industries Ltd.( Pharmaceuticals, Biotechnology& Life Sciences)",
     "security_type": "Common Stock",
@@ -715,7 +1540,7 @@
     "market_value": 30820116.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Tata Consumer Products Ltd. ( Fooddd, Beverage& TTTobacco)",
     "security_type": "Common Stock",
@@ -726,7 +1551,7 @@
     "market_value": 32618308.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Team Lease Services Ltd. ( Commercial& Professional Services)*",
     "security_type": "Common Stock",
@@ -737,7 +1562,7 @@
     "market_value": 10560494.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Zomato Ltd.( Consumer Services)*",
     "security_type": "Common Stock",
@@ -748,7 +1573,7 @@
     "market_value": 487661514.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Bank Central Asia Tbk PT ( Banks)",
     "security_type": "Common Stock",
@@ -759,7 +1584,7 @@
     "market_value": 40881280.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "BFIFinance Indonesia Tbk PT ( Financial Services)",
     "security_type": "Common Stock",
@@ -770,7 +1595,7 @@
     "market_value": 9837700.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Map Aktif Adiperkasa PT ( Consumer Discretionary Distribution& Retail)",
     "security_type": "Common Stock",
@@ -781,7 +1606,7 @@
     "market_value": 11782758.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Nusantara Sejahtera Raaaya Tbk PT( Media& Entertainment)(a)",
     "security_type": "Common Stock",
@@ -792,7 +1617,7 @@
     "market_value": 5557918.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Pakuwon Jati Tbk PT( Real Estate Management& Development)",
     "security_type": "Common Stock",
@@ -803,7 +1628,7 @@
     "market_value": 75471001.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Alsea SABde CV( Consumer Services)*",
     "security_type": "Common Stock",
@@ -814,7 +1639,7 @@
     "market_value": 19561594.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "America Mooovil SABde CVVV, Series B( Telecommunication Services)",
     "security_type": "Common Stock",
@@ -825,7 +1650,7 @@
     "market_value": 9758151.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Arca Continental SABde CV ( Fooddd, Beverage& TTTobacco)",
     "security_type": "Common Stock",
@@ -836,7 +1661,7 @@
     "market_value": 19146246.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Bancodel Bajio SA( Banks)(a)",
     "security_type": "Common Stock",
@@ -847,7 +1672,7 @@
     "market_value": 9896477.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Gentera SABde CV( Financial Services)",
     "security_type": "Common Stock",
@@ -858,7 +1683,7 @@
     "market_value": 14003394.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Prologis Property Mexico SAde CVREIT( Equity Real Estate Innnvestment Trusts( REITs))",
     "security_type": "Common Stock",
@@ -869,7 +1694,7 @@
     "market_value": 17228876.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Wal- Martde Mexico SAB de CV( Consumer Staples Distribution& Retail)",
     "security_type": "Common Stock",
@@ -880,7 +1705,7 @@
     "market_value": 102189001.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Credicorp Ltd.( Banks)",
     "security_type": "Common Stock",
@@ -891,7 +1716,7 @@
     "market_value": 19925864.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "BDOUnibank, Inc.( Banks)",
     "security_type": "Common Stock",
@@ -902,7 +1727,7 @@
     "market_value": 16034851.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Jollibee Foods Corp.( Consumer Services)",
     "security_type": "Common Stock",
@@ -913,7 +1738,7 @@
     "market_value": 11816869.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Monde Nissin Corp.( Fooddd, Beverage& TTTobacco)(a) Poland\u20130.",
     "security_type": "Common Stock",
@@ -924,7 +1749,7 @@
     "market_value": 6.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Dino Polska SA( Consumer Staples Distribution& Retail)*(a)",
     "security_type": "Common Stock",
@@ -935,7 +1760,7 @@
     "market_value": 17098176.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Societatea De Producere AEnergiei Electricein Hidrocentrale Hidroelectrica SA ( Utilities)* Russia\u20130.",
     "security_type": "Common Stock",
@@ -946,7 +1771,7 @@
     "market_value": 0.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Renaissance Insurance Group JSC( Insurance)(b) \u2014 Theaccompanyingnotesareanintegralpartofthesefinancialstatements.",
     "security_type": "Common Stock",
@@ -957,7 +1782,7 @@
     "market_value": 21.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Alinma Bank( Banks)",
     "security_type": "Common Stock",
@@ -968,7 +1793,7 @@
     "market_value": 13221466.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Co.for Cooperative Insurance ( The)( Insurance)",
     "security_type": "Common Stock",
@@ -979,7 +1804,7 @@
     "market_value": 13146315.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Saudi Arabian Oil Co. ( Energy)(a)",
     "security_type": "Common Stock",
@@ -990,7 +1815,7 @@
     "market_value": 26512854.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Saudi National Bank( The) ( Banks)",
     "security_type": "Common Stock",
@@ -1001,7 +1826,7 @@
     "market_value": 65035970.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Nanofffilm Technologies International Ltd.( Materials)",
     "security_type": "Common Stock",
@@ -1012,7 +1837,7 @@
     "market_value": 3518896.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "TDCX, Inc. ADR( Commercial & Professional Services)*",
     "security_type": "Common Stock",
@@ -1023,7 +1848,7 @@
     "market_value": 7548000.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Nooova Ljubljanska Bankadddd, GDR( Banks)",
     "security_type": "Common Stock",
@@ -1034,7 +1859,7 @@
     "market_value": 18227041.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Clicks Group Ltd.( Consumer Staples Distribution& Retail)",
     "security_type": "Common Stock",
@@ -1045,7 +1870,7 @@
     "market_value": 18167045.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "JSELtd.( Financial Services)",
     "security_type": "Common Stock",
@@ -1056,7 +1881,7 @@
     "market_value": 7088410.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Old Mutual Ltd.( Insurance)(c)",
     "security_type": "Common Stock",
@@ -1067,7 +1892,7 @@
     "market_value": 37317510.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "HDHyundai Marine Solution Co. Ltd.( Engineering& Construction)*",
     "security_type": "Common Stock",
@@ -1078,7 +1903,7 @@
     "market_value": 4492533.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Hyundai Motor Co. ( Automobiles& Components)",
     "security_type": "Common Stock",
@@ -1089,7 +1914,7 @@
     "market_value": 22291666.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "JYPEntertainment Corp. ( Media& Entertainment)",
     "security_type": "Common Stock",
@@ -1100,7 +1925,7 @@
     "market_value": 11669008.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "KBFinancial Group, Inc. ( Banks)",
     "security_type": "Common Stock",
@@ -1111,7 +1936,7 @@
     "market_value": 24503706.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "LGElectronics, Inc.( Consumer Durables& Apparel)",
     "security_type": "Common Stock",
@@ -1122,7 +1947,7 @@
     "market_value": 18070554.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "NCSoft Corp.( Media& Entertainment)",
     "security_type": "Common Stock",
@@ -1133,7 +1958,7 @@
     "market_value": 4712742.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Orion Corp.( Fooddd, Beverage& Tobacco)",
     "security_type": "Common Stock",
@@ -1144,7 +1969,7 @@
     "market_value": 4521575.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Samsung Biologics Co. Ltd.( Pharmaceuticals, Biotechnology& Life Sciences)*(a)",
     "security_type": "Common Stock",
@@ -1155,7 +1980,7 @@
     "market_value": 14972091.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Samsung E& ACo. Ltd.( Capital Goods)*",
     "security_type": "Common Stock",
@@ -1166,7 +1991,7 @@
     "market_value": 8929576.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Samsung Electronics Co. Ltd. ( TTTechnology Hardware& Equipment)",
     "security_type": "Common Stock",
@@ -1177,7 +2002,7 @@
     "market_value": 177459786.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Samsung SDICo. Ltd. ( TTTechnology Hardware& Equipment)",
     "security_type": "Common Stock",
@@ -1188,7 +2013,7 @@
     "market_value": 308035625.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Chailease Holding Co. Ltd. ( Financial Services)",
     "security_type": "Common Stock",
@@ -1199,7 +2024,7 @@
     "market_value": 16163447.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Chroma ATE, Inc.( TTTechnology Hardware& Equipment)",
     "security_type": "Common Stock",
@@ -1210,7 +2035,7 @@
     "market_value": 8609021.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Delta Electronics, Inc. ( TTTechnology Hardware& Equipment)",
     "security_type": "Common Stock",
@@ -1221,7 +2046,7 @@
     "market_value": 21594217.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Jentech Precision Industrial Co. Ltd.( Semiconductors& Semiconductor Equipment)",
     "security_type": "Common Stock",
@@ -1232,7 +2057,7 @@
     "market_value": 13834870.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Media TTTek, Inc.( Semiconductors & Semiconductor Equipment)",
     "security_type": "Common Stock",
@@ -1243,7 +2068,7 @@
     "market_value": 29276798.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Merida Industry Co. Ltd. ( Consumer Durables& Apparel)",
     "security_type": "Common Stock",
@@ -1254,7 +2079,7 @@
     "market_value": 6014253.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Nien Made Enterprise Co. Ltd. ( Consumer Durables& Apparel)",
     "security_type": "Common Stock",
@@ -1265,7 +2090,7 @@
     "market_value": 14865047.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Taiwan Semiconductor Manufffacturing Co. Ltd. ( Semiconductors& Semiconductor Equipment)",
     "security_type": "Common Stock",
@@ -1276,7 +2101,7 @@
     "market_value": 253920868.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Unimicron Technology Corp. ( TTTechnology Hardware& Equipment)",
     "security_type": "Common Stock",
@@ -1287,7 +2112,7 @@
     "market_value": 14527378.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "United Microelectronics Corp.( Semiconductors& Semiconductor Equipment)",
     "security_type": "Common Stock",
@@ -1298,7 +2123,7 @@
     "market_value": 398433703.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "PTTExploration& Production PCL( Energy) United Arab Emirates\u20130.",
     "security_type": "Common Stock",
@@ -1309,7 +2134,7 @@
     "market_value": 3.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Abu Dhabi Islamic Bank PJSC ( Banks)",
     "security_type": "Common Stock",
@@ -1320,7 +2145,7 @@
     "market_value": 8229893.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "GCCSABde CV( Materials)",
     "security_type": "Common Stock",
@@ -1331,7 +2156,7 @@
     "market_value": 8851591.0
   },
   {
-    "fund_name": "gsam_emerging_markets_equity",
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
     "report_date": "April 30, 2024",
     "security_name": "Samsonite International SA( Consumer Durables& Apparel)*(a)",
     "security_type": "Common Stock",
@@ -1340,5 +2165,2942 @@
     "shares": 5453700.0,
     "principal": null,
     "market_value": 2648990319.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Itau Unibanco Holding SA ( Banks)",
+    "security_type": "Preferred Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 3177000.0,
+    "principal": null,
+    "market_value": 19187058.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Itau Unibanco Holding SA ( Banks)",
+    "security_type": "Preferred Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 3177000.0,
+    "principal": null,
+    "market_value": 19187058.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Caixa Seguridade Participacoes SA( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 19200.0,
+    "principal": null,
+    "market_value": 57904.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Fleury SA( Health Care Equipment& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 16400.0,
+    "principal": null,
+    "market_value": 45733.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Mercado Libre, Inc.( Consumer Discretionary Distribution& Retail)*",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 119.0,
+    "principal": null,
+    "market_value": 173585.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "NUHoldings Ltd., Class A ( Banks)*",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 7726.0,
+    "principal": null,
+    "market_value": 83904.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Odontoprev SA( Health Care Equipment& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 5616.0,
+    "principal": null,
+    "market_value": 12924.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "PRIOSA( Energy)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 5100.0,
+    "principal": null,
+    "market_value": 47144.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Raia Drogasil SA( Consumer Staples Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 13300.0,
+    "principal": null,
+    "market_value": 65519.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Rumo SA( TTTransportation)*",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 12100.0,
+    "principal": null,
+    "market_value": 46978.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sao Martinho SA( Fooddd, Beverage& TTTobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 7000.0,
+    "principal": null,
+    "market_value": 38541.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sendas Distribuidora SA ( Consumer Staples Distribution & Retail)*",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 32300.0,
+    "principal": null,
+    "market_value": 81612.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "TIMSA( TTTelecommunication Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 24900.0,
+    "principal": null,
+    "market_value": 84445.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "TOTVSSA( Software& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 14300.0,
+    "principal": null,
+    "market_value": 75843.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Vivara Participacoes SA ( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 5900.0,
+    "principal": null,
+    "market_value": 839311.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Commercial International Bank - Egypt( CIB), GDR( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "EGY",
+    "sector": null,
+    "shares": 19343.0,
+    "principal": null,
+    "market_value": 28666.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Hellenic Telecommunications Organization SA ( TTTelecommunication Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "GRC",
+    "sector": null,
+    "shares": 3147.0,
+    "principal": null,
+    "market_value": 47808.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "JUMBOSA( Consumer Discretionary Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "GRC",
+    "sector": null,
+    "shares": 2604.0,
+    "principal": null,
+    "market_value": 81091.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Mytilineos SA( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "GRC",
+    "sector": null,
+    "shares": 1053.0,
+    "principal": null,
+    "market_value": 42720.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "National Bankof Greece SA ( Banks)*",
+    "security_type": "Common Stock",
+    "country_iso3": "GRC",
+    "sector": null,
+    "shares": 19853.0,
+    "principal": null,
+    "market_value": 160175.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Piraeus Financial Holdings SA ( Banks)*",
+    "security_type": "Common Stock",
+    "country_iso3": "GRC",
+    "sector": null,
+    "shares": 12049.0,
+    "principal": null,
+    "market_value": 380062.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Amber Enterprises India Ltd.( Consumer Durables& Apparel)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 1209.0,
+    "principal": null,
+    "market_value": 55512.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Apollo Hospitals Enterprise Ltd.( Health Care Equipment& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 1476.0,
+    "principal": null,
+    "market_value": 104981.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Axis Bank Ltd.( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 11422.0,
+    "principal": null,
+    "market_value": 159429.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Bajaj Finance Ltd.( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 804.0,
+    "principal": null,
+    "market_value": 66694.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Bharti Airtel Ltd. ( TTTelecommunication Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 8988.0,
+    "principal": null,
+    "market_value": 142268.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "CMSInfo Systems Ltd. ( Commercial& Professional Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 7741.0,
+    "principal": null,
+    "market_value": 38428.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Coforge Ltd.( Software& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 1282.0,
+    "principal": null,
+    "market_value": 78066.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Computer Age Management Services Ltd.( Commercial& Professional Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 1731.0,
+    "principal": null,
+    "market_value": 66346.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Craftsman Automation Ltd. ( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 824.0,
+    "principal": null,
+    "market_value": 43637.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Five- Star Business Finance Ltd. ( Financial Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 5629.0,
+    "principal": null,
+    "market_value": 51057.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Godrej Consumer Products Ltd.( Household& Personal Products)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 7309.0,
+    "principal": null,
+    "market_value": 106671.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Godrej Properties Ltd. ( Real Estate Management& Development)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 3136.0,
+    "principal": null,
+    "market_value": 99118.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Gokaldas Exports Ltd. ( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 6243.0,
+    "principal": null,
+    "market_value": 65813.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Hindalco Industries Ltd. ( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 16450.0,
+    "principal": null,
+    "market_value": 126513.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Home First Finance Co. India Ltd.( Financial Services)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 3306.0,
+    "principal": null,
+    "market_value": 36066.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "ICICIBank Ltd.( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 21844.0,
+    "principal": null,
+    "market_value": 300987.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Info Edge India Ltd.( Media& Entertainment)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 765.0,
+    "principal": null,
+    "market_value": 55328.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Infosys Ltd.( Software& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 8021.0,
+    "principal": null,
+    "market_value": 135431.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Jio Financial Services Ltd. ( Financial Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 18304.0,
+    "principal": null,
+    "market_value": 82426.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Kfffin Technologies Ltd. ( Financial Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 6249.0,
+    "principal": null,
+    "market_value": 55897.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Naaavin Fluorine International Ltd.( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 1570.0,
+    "principal": null,
+    "market_value": 64171.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Netweb Technologies India Ltd.( TTTechnology Hardware& Equipment)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 2968.0,
+    "principal": null,
+    "market_value": 59365.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Reliance Industries Ltd. ( Energy)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 2768.0,
+    "principal": null,
+    "market_value": 97169.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "SBILife Insurance Co. Ltd. ( Insurance)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 4092.0,
+    "principal": null,
+    "market_value": 70400.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sona Blllw Precision Forgings Ltd.( Automobiles& Components)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 8289.0,
+    "principal": null,
+    "market_value": 61960.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sun Pharmaceutical Industries Ltd.( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 7909.0,
+    "principal": null,
+    "market_value": 142087.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Suven Pharmaceuticals Ltd.( Pharmaceuticals, Biotechnology& Life Sciences)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 5768.0,
+    "principal": null,
+    "market_value": 45492.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Tata Consumer Products Ltd. ( Fooddd, Beverage& TTTobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 12648.0,
+    "principal": null,
+    "market_value": 167488.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Team Lease Services Ltd. ( Commercial& Professional Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 986.0,
+    "principal": null,
+    "market_value": 39124.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Zomato Ltd.( Consumer Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 108814.0,
+    "principal": null,
+    "market_value": 2869059.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Bank Central Asia Tbk PT ( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "IDN",
+    "sector": null,
+    "shares": 482400.0,
+    "principal": null,
+    "market_value": 290060.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "BFIFinance Indonesia Tbk PT ( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IDN",
+    "sector": null,
+    "shares": 561200.0,
+    "principal": null,
+    "market_value": 36220.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Map Aktif Adiperkasa PT ( Consumer Discretionary Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "IDN",
+    "sector": null,
+    "shares": 1067100.0,
+    "principal": null,
+    "market_value": 51845.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Nusantara Sejahtera Raaaya Tbk PT( Media& Entertainment)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "IDN",
+    "sector": null,
+    "shares": 1222000.0,
+    "principal": null,
+    "market_value": 16985.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Pakuwon Jati Tbk PT( Real Estate Management& Development)",
+    "security_type": "Common Stock",
+    "country_iso3": "IDN",
+    "sector": null,
+    "shares": 1088600.0,
+    "principal": null,
+    "market_value": 421962.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Alsea SABde CV( Consumer Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 27399.0,
+    "principal": null,
+    "market_value": 114773.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "America Mooovil SABde CVVV, Series B( Telecommunication Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 60900.0,
+    "principal": null,
+    "market_value": 57982.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Arca Continental SABde CV ( Fooddd, Beverage& TTTobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 9827.0,
+    "principal": null,
+    "market_value": 95868.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Bolsa Mexicanade Valores SAB de CV( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 36300.0,
+    "principal": null,
+    "market_value": 68189.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Grupo Financiero Banorte SAB de CVVV, Class O( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 12600.0,
+    "principal": null,
+    "market_value": 124707.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Prologis Property Mexico SAde CVREIT( Equity Real Estate Innnvestment Trusts( REITs))",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 18904.0,
+    "principal": null,
+    "market_value": 74554.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Wal- Martde Mexico SAB de CV( Consumer Staples Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 21200.0,
+    "principal": null,
+    "market_value": 615177.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Credicorp Ltd.( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "PER",
+    "sector": null,
+    "shares": 618.0,
+    "principal": null,
+    "market_value": 102347.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "BDOUnibank, Inc.( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "PHL",
+    "sector": null,
+    "shares": 27260.0,
+    "principal": null,
+    "market_value": 69933.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Jollibee Foods Corp.( Consumer Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "PHL",
+    "sector": null,
+    "shares": 12220.0,
+    "principal": null,
+    "market_value": 49687.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Monde Nissin Corp.( Fooddd, Beverage& TTTobacco)(a) Poland\u20130.",
+    "security_type": "Common Stock",
+    "country_iso3": "PHL",
+    "sector": null,
+    "shares": 481900.0,
+    "principal": null,
+    "market_value": 8.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Dino Polska SA( Consumer Staples Distribution& Retail)*(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "PHL",
+    "sector": null,
+    "shares": 862.0,
+    "principal": null,
+    "market_value": 82582.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Societatea De Producere AEnergiei Electricein Hidrocentrale Hidroelectrica SA ( Utilities)*",
+    "security_type": "Common Stock",
+    "country_iso3": "ROU",
+    "sector": null,
+    "shares": 2903.0,
+    "principal": null,
+    "market_value": 83855.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Alinma Bank( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "SAU",
+    "sector": null,
+    "shares": 9251.0,
+    "principal": null,
+    "market_value": 82061.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Co.for Cooperative Insurance ( The)( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "SAU",
+    "sector": null,
+    "shares": 2281.0,
+    "principal": null,
+    "market_value": 90528.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Saudi Arabian Oil Co. ( Energy)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "SAU",
+    "sector": null,
+    "shares": 19929.0,
+    "principal": null,
+    "market_value": 159685.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Saudi National Bank( The) ( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "SAU",
+    "sector": null,
+    "shares": 7294.0,
+    "principal": null,
+    "market_value": 405290.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Nanofffilm Technologies International Ltd.( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": "SGP",
+    "sector": null,
+    "shares": 32500.0,
+    "principal": null,
+    "market_value": 15351.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "TDCX, Inc. ADR( Commercial & Professional Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "SGP",
+    "sector": null,
+    "shares": 1383.0,
+    "principal": null,
+    "market_value": 25253.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Nooova Ljubljanska Bankadddd, GDR( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "SVN",
+    "sector": null,
+    "shares": 3567.0,
+    "principal": null,
+    "market_value": 76896.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Clicks Group Ltd.( Consumer Staples Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "ZAF",
+    "sector": null,
+    "shares": 7396.0,
+    "principal": null,
+    "market_value": 114560.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "JSELtd.( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "ZAF",
+    "sector": null,
+    "shares": 6930.0,
+    "principal": null,
+    "market_value": 31643.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Old Mutual Ltd.( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "ZAF",
+    "sector": null,
+    "shares": 82190.0,
+    "principal": null,
+    "market_value": 194326.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "F& FCo. Ltd.( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 755.0,
+    "principal": null,
+    "market_value": 35739.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "HDHyundai Marine Solution Co. Ltd.( Engineering& Construction)*",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 318.0,
+    "principal": null,
+    "market_value": 19189.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Hyundai Motor Co. ( Automobiles& Components)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 543.0,
+    "principal": null,
+    "market_value": 97673.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "JYPEntertainment Corp. ( Media& Entertainment)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 1137.0,
+    "principal": null,
+    "market_value": 54381.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "KBFinancial Group, Inc. ( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 2070.0,
+    "principal": null,
+    "market_value": 112270.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Kia Corp.( Automobiles& Components)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 964.0,
+    "principal": null,
+    "market_value": 81673.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "LGElectronics, Inc.( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 1432.0,
+    "principal": null,
+    "market_value": 95374.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "NCSoft Corp.( Media& Entertainment)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 172.0,
+    "principal": null,
+    "market_value": 21732.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Orion Corp.( Fooddd, Beverage& Tobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 671.0,
+    "principal": null,
+    "market_value": 44906.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Samsung Biologics Co. Ltd.( Pharmaceuticals, Biotechnology& Life Sciences)*(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 114.0,
+    "principal": null,
+    "market_value": 64075.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Samsung E& ACo. Ltd.( Capital Goods)* Theaccompanyingnotesareanintegralpartofthesefinancialstatements.",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 2913.0,
+    "principal": null,
+    "market_value": 25.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Samsung Electronics Co. Ltd. ( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 16386.0,
+    "principal": null,
+    "market_value": 910843.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Samsung SDICo. Ltd. ( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 330.0,
+    "principal": null,
+    "market_value": 1695209.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Chailease Holding Co. Ltd. ( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 18260.0,
+    "principal": null,
+    "market_value": 96308.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Chroma ATE, Inc.( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 7000.0,
+    "principal": null,
+    "market_value": 56852.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Delta Electronics, Inc. ( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 14000.0,
+    "principal": null,
+    "market_value": 137106.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "EInk Holdings, Inc. ( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 7000.0,
+    "principal": null,
+    "market_value": 44753.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Jentech Precision Industrial Co. Ltd.( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 2000.0,
+    "principal": null,
+    "market_value": 59505.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Media TTTek, Inc.( Semiconductors & Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 6000.0,
+    "principal": null,
+    "market_value": 180907.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Nien Made Enterprise Co. Ltd. ( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 6000.0,
+    "principal": null,
+    "market_value": 70118.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Taiwan Semiconductor Manufffacturing Co. Ltd. ( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 62000.0,
+    "principal": null,
+    "market_value": 1484514.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Unimicron Technology Corp. ( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 19000.0,
+    "principal": null,
+    "market_value": 105070.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "United Microelectronics Corp.( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 85000.0,
+    "principal": null,
+    "market_value": 130596.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Yageo Corp.( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 4000.0,
+    "principal": null,
+    "market_value": 2442027.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Airportsof Thailand PCL ( TTTransportation)",
+    "security_type": "Common Stock",
+    "country_iso3": "THA",
+    "sector": null,
+    "shares": 29400.0,
+    "principal": null,
+    "market_value": 51618.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Bangkok Dusit Medical Services PCL, Class F( Health Care Equipment& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "THA",
+    "sector": null,
+    "shares": 87700.0,
+    "principal": null,
+    "market_value": 68483.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "PTTExploration& Production PCL( Energy) United Arab Emirates\u20131.",
+    "security_type": "Common Stock",
+    "country_iso3": "THA",
+    "sector": null,
+    "shares": 23900.0,
+    "principal": null,
+    "market_value": 4.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Abu Dhabi Islamic Bank PJSC ( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "THA",
+    "sector": null,
+    "shares": 18193.0,
+    "principal": null,
+    "market_value": 55279.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "ADNOCDrilling Co. PJSC ( Energy)",
+    "security_type": "Common Stock",
+    "country_iso3": "THA",
+    "sector": null,
+    "shares": 69496.0,
+    "principal": null,
+    "market_value": 73036.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Emirates Central Cooling Systems Corp.( Utilities)",
+    "security_type": "Common Stock",
+    "country_iso3": "THA",
+    "sector": null,
+    "shares": 63523.0,
+    "principal": null,
+    "market_value": 155814.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "GCCSABde CV( Materials)",
+    "security_type": "Preferred Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 3952.0,
+    "principal": null,
+    "market_value": 1.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Itau Unibanco Holding SA ( Banks) 7.53%",
+    "security_type": "Preferred Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 13500.0,
+    "principal": null,
+    "market_value": 81531.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Marcopolo SA ( Capital Goods) 7.11",
+    "security_type": "Preferred Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 28560.0,
+    "principal": null,
+    "market_value": 117777.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS EMERGING MARKETS EQUITY EX. CHINA FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Marcopolo SA ( Capital Goods) 7.11",
+    "security_type": "Preferred Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 28560.0,
+    "principal": null,
+    "market_value": 117777.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Caixa Seguridade Participacoes SA( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 24263.0,
+    "principal": null,
+    "market_value": 73173.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Mercado Libre, Inc.( Consumer Discretionary Distribution& Retail)*",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 296.0,
+    "principal": null,
+    "market_value": 431775.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "NUHoldings Ltd., Class A ( Banks)*",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 16593.0,
+    "principal": null,
+    "market_value": 180200.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Raia Drogasil SA( Consumer Staples Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 18600.0,
+    "principal": null,
+    "market_value": 91628.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Rumo SA( TTTransportation)*",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 23300.0,
+    "principal": null,
+    "market_value": 90461.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "TIMSA( TTTelecommunication Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 44300.0,
+    "principal": null,
+    "market_value": 150238.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Vivara Participacoes SA ( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 8900.0,
+    "principal": null,
+    "market_value": 1055457.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Alibaba Group Holding Ltd. ( Consumer Discretionary Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 77127.0,
+    "principal": null,
+    "market_value": 722145.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "ANTTTASports Products Ltd. ( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 24200.0,
+    "principal": null,
+    "market_value": 273968.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "BYDCo. Ltd., Class H ( Automobiles& Components)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 9000.0,
+    "principal": null,
+    "market_value": 246713.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "China Merchants Bank Co. Ltd., Class H( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 103500.0,
+    "principal": null,
+    "market_value": 448244.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "China Yangtze Power Co. Ltd., Class A( Utilities)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 38099.0,
+    "principal": null,
+    "market_value": 135458.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Contemporary Amperex Technology Co. Ltd., Class A ( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 9960.0,
+    "principal": null,
+    "market_value": 278099.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "KEHoldings, Inc. ADR ( Real Estate Management& Development)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 11251.0,
+    "principal": null,
+    "market_value": 170115.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Meituan, Class B( Consumer Services)*(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 27700.0,
+    "principal": null,
+    "market_value": 378230.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Midea Group Co. Ltd., Class A ( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 20000.0,
+    "principal": null,
+    "market_value": 192021.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "NARITechnology Co. Ltd., Class A( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 37900.0,
+    "principal": null,
+    "market_value": 122370.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "PICCProperty& Casualty Co. Ltd., Class H( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 118000.0,
+    "principal": null,
+    "market_value": 146601.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Ping An Insurance Group Co.of China Ltd., Class H( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 54500.0,
+    "principal": null,
+    "market_value": 246999.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Shenzhen Mindraaay Bio- Medical Electronics Co. Ltd., Class A ( Health Care Equipment& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 4500.0,
+    "principal": null,
+    "market_value": 188626.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Shenzhou International Group Holdings Ltd.( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 23700.0,
+    "principal": null,
+    "market_value": 232952.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Silergy Corp.( Semiconductors & Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 14000.0,
+    "principal": null,
+    "market_value": 185936.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Tencent Holdings Ltd.( Media & Entertainment)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 34800.0,
+    "principal": null,
+    "market_value": 1527135.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Tencent Music Entertainment Group ADR( Media& Entertainment)*",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 7865.0,
+    "principal": null,
+    "market_value": 98706.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Weichai Power Co. Ltd., Class H( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 94000.0,
+    "principal": null,
+    "market_value": 192076.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Will Semiconductor Co. Ltd. Shanghai, Class A( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 12900.0,
+    "principal": null,
+    "market_value": 179949.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Yunnan Aluminium Co. Ltd., Class A( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 138800.0,
+    "principal": null,
+    "market_value": 273420.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Zhejiang Sanhua Intelligent Controls Co. Ltd., Class A ( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 39550.0,
+    "principal": null,
+    "market_value": 119187.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Zhongji Innolight Co. Ltd., Class A( Technology Hardware & Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 6300.0,
+    "principal": null,
+    "market_value": 158529.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "ZTOExpress Caaayman, Inc. ADR( TTTransportation)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHN",
+    "sector": null,
+    "shares": 8227.0,
+    "principal": null,
+    "market_value": 6690164.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Commercial International Bank - Egypt( CIB), GDR( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "EGY",
+    "sector": null,
+    "shares": 88619.0,
+    "principal": null,
+    "market_value": 131333.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "JUMBOSA( Consumer Discretionary Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "GRC",
+    "sector": null,
+    "shares": 6048.0,
+    "principal": null,
+    "market_value": 188340.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Mytilineos SA( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "GRC",
+    "sector": null,
+    "shares": 1816.0,
+    "principal": null,
+    "market_value": 73675.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "National Bankof Greece SA ( Banks)*",
+    "security_type": "Common Stock",
+    "country_iso3": "GRC",
+    "sector": null,
+    "shares": 39893.0,
+    "principal": null,
+    "market_value": 321858.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Piraeus Financial Holdings SA ( Banks)*",
+    "security_type": "Common Stock",
+    "country_iso3": "GRC",
+    "sector": null,
+    "shares": 15706.0,
+    "principal": null,
+    "market_value": 646791.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Hong Kong Exchanges& Clearing Ltd.( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "HKG",
+    "sector": null,
+    "shares": 3567.0,
+    "principal": null,
+    "market_value": 113339.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Apollo Hospitals Enterprise Ltd.( Health Care Equipment& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 3780.0,
+    "principal": null,
+    "market_value": 268853.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Axis Bank Ltd.( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 22968.0,
+    "principal": null,
+    "market_value": 320590.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Bajaj Finance Ltd.( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 2866.0,
+    "principal": null,
+    "market_value": 237741.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Godrej Properties Ltd. ( Real Estate Management& Development)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 7147.0,
+    "principal": null,
+    "market_value": 225891.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "ICICIBank Ltd.( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 51729.0,
+    "principal": null,
+    "market_value": 712771.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Info Edge India Ltd.( Media& Entertainment)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 2821.0,
+    "principal": null,
+    "market_value": 204025.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Infosys Ltd. ADR( Software& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 16999.0,
+    "principal": null,
+    "market_value": 284053.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Jio Financial Services Ltd. ( Financial Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 60554.0,
+    "principal": null,
+    "market_value": 272684.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "SBILife Insurance Co. Ltd. ( Insurance)(a) Theaccompanyingnotesareanintegralpartofthesefinancialstatements.",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 15575.0,
+    "principal": null,
+    "market_value": 27.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sona Blllw Precision Forgings Ltd.( Automobiles& Components)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 19235.0,
+    "principal": null,
+    "market_value": 143780.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sun Pharmaceutical Industries Ltd.( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 15169.0,
+    "principal": null,
+    "market_value": 272514.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Tata Consumer Products Ltd. ( Fooddd, Beverage& TTTobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 43165.0,
+    "principal": null,
+    "market_value": 571602.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Zomato Ltd.( Consumer Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "IND",
+    "sector": null,
+    "shares": 269124.0,
+    "principal": null,
+    "market_value": 4403582.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Bank Central Asia Tbk PT ( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "IDN",
+    "sector": null,
+    "shares": 860800.0,
+    "principal": null,
+    "market_value": 517586.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Alsea SABde CV( Consumer Services)*",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 57500.0,
+    "principal": null,
+    "market_value": 240865.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "America Mooovil SABde CVVV, Series B( Telecommunication Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 123400.0,
+    "principal": null,
+    "market_value": 117488.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Arca Continental SABde CV ( Fooddd, Beverage& TTTobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 22899.0,
+    "principal": null,
+    "market_value": 223392.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Bancodel Bajio SA( Banks)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 23400.0,
+    "principal": null,
+    "market_value": 86274.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Prologis Property Mexico SAde CVREIT( Equity Real Estate Innnvestment Trusts( REITs))",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 34180.0,
+    "principal": null,
+    "market_value": 134799.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Wal- Martde Mexico SAB de CV( Consumer Staples Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "MEX",
+    "sector": null,
+    "shares": 46201.0,
+    "principal": null,
+    "market_value": 975208.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Credicorp Ltd.( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "PER",
+    "sector": null,
+    "shares": 1057.0,
+    "principal": null,
+    "market_value": 175050.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "BDOUnibank, Inc.( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "PHL",
+    "sector": null,
+    "shares": 42110.0,
+    "principal": null,
+    "market_value": 108030.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Jollibee Foods Corp.( Consumer Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "PHL",
+    "sector": null,
+    "shares": 10250.0,
+    "principal": null,
+    "market_value": 41677.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Monde Nissin Corp.( Fooddd, Beverage& TTTobacco)(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "PHL",
+    "sector": null,
+    "shares": 1046300.0,
+    "principal": null,
+    "market_value": 342650.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Societatea De Producere AEnergiei Electricein Hidrocentrale Hidroelectrica SA ( Utilities)* Russia\u20130.",
+    "security_type": "Common Stock",
+    "country_iso3": "ROU",
+    "sector": null,
+    "shares": 4286.0,
+    "principal": null,
+    "market_value": 0.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Alinma Bank( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "SAU",
+    "sector": null,
+    "shares": 19681.0,
+    "principal": null,
+    "market_value": 174581.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Co.for Cooperative Insurance ( The)( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "SAU",
+    "sector": null,
+    "shares": 4794.0,
+    "principal": null,
+    "market_value": 190262.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Saudi National Bank( The) ( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "SAU",
+    "sector": null,
+    "shares": 10213.0,
+    "principal": null,
+    "market_value": 467080.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Clicks Group Ltd.( Consumer Staples Distribution& Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "ZAF",
+    "sector": null,
+    "shares": 19775.0,
+    "principal": null,
+    "market_value": 306303.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Old Mutual Ltd.( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "ZAF",
+    "sector": null,
+    "shares": 199575.0,
+    "principal": null,
+    "market_value": 423156.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Hyundai Motor Co. ( Automobiles& Components)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 1104.0,
+    "principal": null,
+    "market_value": 198583.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "KBFinancial Group, Inc. ( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 4327.0,
+    "principal": null,
+    "market_value": 234683.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "LGElectronics, Inc.( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 3087.0,
+    "principal": null,
+    "market_value": 205601.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "NCSoft Corp.( Media& Entertainment)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 462.0,
+    "principal": null,
+    "market_value": 58374.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Orion Corp.( Fooddd, Beverage& Tobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 569.0,
+    "principal": null,
+    "market_value": 38080.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Samsung Electronics Co. Ltd. ( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 27987.0,
+    "principal": null,
+    "market_value": 1555703.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Samsung SDICo. Ltd. ( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "KOR",
+    "sector": null,
+    "shares": 581.0,
+    "principal": null,
+    "market_value": 2470825.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Chailease Holding Co. Ltd. ( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 37731.0,
+    "principal": null,
+    "market_value": 199003.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Delta Electronics, Inc. ( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 25000.0,
+    "principal": null,
+    "market_value": 244833.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Media TTTek, Inc.( Semiconductors & Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 13000.0,
+    "principal": null,
+    "market_value": 391965.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Nien Made Enterprise Co. Ltd. ( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 13000.0,
+    "principal": null,
+    "market_value": 151923.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Taiwan Semiconductor Manufffacturing Co. Ltd. ( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 98000.0,
+    "principal": null,
+    "market_value": 2346489.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Unimicron Technology Corp. ( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 30000.0,
+    "principal": null,
+    "market_value": 165901.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "United Microelectronics Corp.( Semiconductors& Semiconductor Equipment) United Arab Emirates\u20130.",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 130000.0,
+    "principal": null,
+    "market_value": 3.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Abu Dhabi Islamic Bank PJSC ( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 22869.0,
+    "principal": null,
+    "market_value": 22305361.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS ESG EMERGING MARKETS EQUITY FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Itau Unibanco Holding SA ( Banks)",
+    "security_type": "Preferred Stock",
+    "country_iso3": "BRA",
+    "sector": null,
+    "shares": 34900.0,
+    "principal": null,
+    "market_value": 210774.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Nooovo Nordisk A/ S, Class B( Pharmaceuticals, Biotechnology& Life Sciences) Finland\u20133.",
+    "security_type": "Common Stock",
+    "country_iso3": "DNK",
+    "sector": null,
+    "shares": 132148.0,
+    "principal": null,
+    "market_value": 0.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Neste OYJ( Energy)",
+    "security_type": "Common Stock",
+    "country_iso3": "DNK",
+    "sector": null,
+    "shares": 1417179.0,
+    "principal": null,
+    "market_value": 32126204.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "BNPParibas SA( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "FRA",
+    "sector": null,
+    "shares": 644269.0,
+    "principal": null,
+    "market_value": 46362815.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Vinci SA( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "FRA",
+    "sector": null,
+    "shares": 276260.0,
+    "principal": null,
+    "market_value": 78733889.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Infffineon Technologies AG( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "DEU",
+    "sector": null,
+    "shares": 931536.0,
+    "principal": null,
+    "market_value": 32327133.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "AIAGroup Ltd.( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "HKG",
+    "sector": null,
+    "shares": 4472400.0,
+    "principal": null,
+    "market_value": 32757459.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Moncler Sp A( Consumer Durables& Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "ITA",
+    "sector": null,
+    "shares": 327600.0,
+    "principal": null,
+    "market_value": 22303721.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Hoooya Corp.( Health Care Equipment& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 189600.0,
+    "principal": null,
+    "market_value": 21982191.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Keyence Corp.( TTTechnology Hardware& Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 62200.0,
+    "principal": null,
+    "market_value": 27353685.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Nomura Research Institute Ltd. ( Software& Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 1206600.0,
+    "principal": null,
+    "market_value": 29197184.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "ORIXCorp.( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 1856100.0,
+    "principal": null,
+    "market_value": 37985860.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Shiseido Co. Ltd.( Household& Personal Products)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 658400.0,
+    "principal": null,
+    "market_value": 17624221.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sumitomo Mitsui Financial Group, Inc.( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 707000.0,
+    "principal": null,
+    "market_value": 40160296.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Takeda Pharmaceutical Co. Ltd.( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 1250473.0,
+    "principal": null,
+    "market_value": 207168458.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Aalberts NV( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "NLD",
+    "sector": null,
+    "shares": 624383.0,
+    "principal": null,
+    "market_value": 29686805.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Koninklijke Ahold Delhaize NV ( Consumer Staples Distribution & Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "NLD",
+    "sector": null,
+    "shares": 1449277.0,
+    "principal": null,
+    "market_value": 73678436.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Banco Bilbao Vizcaaaya Argentaria SA( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "ESP",
+    "sector": null,
+    "shares": 3022776.0,
+    "principal": null,
+    "market_value": 32688225.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Cellnex TTTelecom SA ( TTTelecommunication Services)*(a)",
+    "security_type": "Common Stock",
+    "country_iso3": "ESP",
+    "sector": null,
+    "shares": 963411.0,
+    "principal": null,
+    "market_value": 31845271.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Iberdrola SA( Utilities)",
+    "security_type": "Common Stock",
+    "country_iso3": "ESP",
+    "sector": null,
+    "shares": 3815481.0,
+    "principal": null,
+    "market_value": 111317331.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Hexagon AB, Class B ( TTTechnology Hardware& Equipment)(b)",
+    "security_type": "Common Stock",
+    "country_iso3": "SWE",
+    "sector": null,
+    "shares": 2385482.0,
+    "principal": null,
+    "market_value": 24954464.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "DSM- Firmenich AG ( Materials)*",
+    "security_type": "Common Stock",
+    "country_iso3": "CHE",
+    "sector": null,
+    "shares": 192258.0,
+    "principal": null,
+    "market_value": 21562609.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Lonza Group AG ( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHE",
+    "sector": null,
+    "shares": 38043.0,
+    "principal": null,
+    "market_value": 20999495.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "UBSGroup AG( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHE",
+    "sector": null,
+    "shares": 721078.0,
+    "principal": null,
+    "market_value": 18937875.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Zurich Insurance Group AG ( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHE",
+    "sector": null,
+    "shares": 90254.0,
+    "principal": null,
+    "market_value": 105187100.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Taiwan Semiconductor Manufffacturing Co. Ltd. ADR( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 157648.0,
+    "principal": null,
+    "market_value": 21651376.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Ashtead Group PLC( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 432257.0,
+    "principal": null,
+    "market_value": 31387002.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Astra Zeneca PLC ( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 287647.0,
+    "principal": null,
+    "market_value": 43506313.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Compass Group PLC ( Consumer Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 400542.0,
+    "principal": null,
+    "market_value": 11140567.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "DSSmith PLC( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 5819419.0,
+    "principal": null,
+    "market_value": 25352483.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "RELXPLC( Commercial& Professional Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 785118.0,
+    "principal": null,
+    "market_value": 32258054.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Rentokil Initial PLC ( Commercial& Professional Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 5544419.0,
+    "principal": null,
+    "market_value": 171632502.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Experian PLC( Commercial& Professional Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 558369.0,
+    "principal": null,
+    "market_value": 22521227.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Ferguson PLC( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 115402.0,
+    "principal": null,
+    "market_value": 24333189.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Nestle SA( Fooddd, Beverage& Tobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 431656.0,
+    "principal": null,
+    "market_value": 43338348.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY ESG FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Schneider Electric SE( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 141423.0,
+    "principal": null,
+    "market_value": 1053224144.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Rio Tinto PLC( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": null,
+    "sector": null,
+    "shares": 930611.0,
+    "principal": null,
+    "market_value": 62965873.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Transurban Group ( TTTransportation)",
+    "security_type": "Common Stock",
+    "country_iso3": null,
+    "sector": null,
+    "shares": 2767487.0,
+    "principal": null,
+    "market_value": 85184538.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Nooovo Nordisk A/ S, Class B( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "DNK",
+    "sector": null,
+    "shares": 161406.0,
+    "principal": null,
+    "market_value": 20699078.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "BNPParibas SA( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "FRA",
+    "sector": null,
+    "shares": 690821.0,
+    "principal": null,
+    "market_value": 49712785.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Gecina SAREIT( Equity Real Estate Innnvestment Trusts ( REITs))",
+    "security_type": "Common Stock",
+    "country_iso3": "FRA",
+    "sector": null,
+    "shares": 232511.0,
+    "principal": null,
+    "market_value": 23739794.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "LVMHMoet Hennessy Louis Vuitton SE( Consumer Durables & Apparel)",
+    "security_type": "Common Stock",
+    "country_iso3": "FRA",
+    "sector": null,
+    "shares": 51273.0,
+    "principal": null,
+    "market_value": 42117527.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Societe Generale SA( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "FRA",
+    "sector": null,
+    "shares": 1041049.0,
+    "principal": null,
+    "market_value": 28051131.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Vinci SA( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "FRA",
+    "sector": null,
+    "shares": 380121.0,
+    "principal": null,
+    "market_value": 188162340.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Deutsche Telekom AG ( TTTelecommunication Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "DEU",
+    "sector": null,
+    "shares": 1185043.0,
+    "principal": null,
+    "market_value": 27144094.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Enel Sp A( Utilities)",
+    "security_type": "Common Stock",
+    "country_iso3": "ITA",
+    "sector": null,
+    "shares": 4391833.0,
+    "principal": null,
+    "market_value": 28865068.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Uni Credit Sp A( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "ITA",
+    "sector": null,
+    "shares": 379744.0,
+    "principal": null,
+    "market_value": 42803337.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "ORIXCorp.( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 2276700.0,
+    "principal": null,
+    "market_value": 46593613.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sumitomo Mitsui Financial Group, Inc.( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 761400.0,
+    "principal": null,
+    "market_value": 43250424.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Takeda Pharmaceutical Co. Ltd.( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 842700.0,
+    "principal": null,
+    "market_value": 22147902.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Tokyo Electron Ltd. ( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "JPN",
+    "sector": null,
+    "shares": 111700.0,
+    "principal": null,
+    "market_value": 136492878.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Koninklijke Ahold Delhaize NV ( Consumer Staples Distribution & Retail)",
+    "security_type": "Common Stock",
+    "country_iso3": "NLD",
+    "sector": null,
+    "shares": 1895071.0,
+    "principal": null,
+    "market_value": 57523347.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Koninklijke KPNNV ( TTTelecommunication Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "NLD",
+    "sector": null,
+    "shares": 7500237.0,
+    "principal": null,
+    "market_value": 84780212.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "DBSGroup Holdings Ltd. ( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "SGP",
+    "sector": null,
+    "shares": 1175350.0,
+    "principal": null,
+    "market_value": 29921365.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Singapore Exchange Ltd. ( Financial Services)",
+    "security_type": "Common Stock",
+    "country_iso3": "SGP",
+    "sector": null,
+    "shares": 3487900.0,
+    "principal": null,
+    "market_value": 53714163.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Banco Bilbao Vizcaaaya Argentaria SA( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "ESP",
+    "sector": null,
+    "shares": 2096393.0,
+    "principal": null,
+    "market_value": 22670342.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Iberdrola SA( Utilities)",
+    "security_type": "Common Stock",
+    "country_iso3": "ESP",
+    "sector": null,
+    "shares": 4162225.0,
+    "principal": null,
+    "market_value": 73705808.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "DSM- Firmenich AG ( Materials)*",
+    "security_type": "Common Stock",
+    "country_iso3": "CHE",
+    "sector": null,
+    "shares": 267457.0,
+    "principal": null,
+    "market_value": 29996519.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Zurich Insurance Group AG ( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "CHE",
+    "sector": null,
+    "shares": 85479.0,
+    "principal": null,
+    "market_value": 71372319.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Taiwan Semiconductor Manufffacturing Co. Ltd. ( Semiconductors& Semiconductor Equipment)",
+    "security_type": "Common Stock",
+    "country_iso3": "TWN",
+    "sector": null,
+    "shares": 1167000.0,
+    "principal": null,
+    "market_value": 27942378.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Astra Zeneca PLC ( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 395298.0,
+    "principal": null,
+    "market_value": 59788416.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Coca- Cola Europacifffic Partners PLC( Fooddd, Beverage& Tobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 594619.0,
+    "principal": null,
+    "market_value": 42824460.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "DSSmith PLC( Materials)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 10006306.0,
+    "principal": null,
+    "market_value": 43592789.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "HSBCHoldings PLC( Banks)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 5384793.0,
+    "principal": null,
+    "market_value": 46675141.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "National Grid PLC( Utilities)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 3172394.0,
+    "principal": null,
+    "market_value": 41612812.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Unilever PLC( Household& Personal Products)",
+    "security_type": "Common Stock",
+    "country_iso3": "GBR",
+    "sector": null,
+    "shares": 515356.0,
+    "principal": null,
+    "market_value": 261153403.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "BPPLC( Energy)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 8702337.0,
+    "principal": null,
+    "market_value": 56092117.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Ferguson PLC( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 192539.0,
+    "principal": null,
+    "market_value": 40597978.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Nestle SA( Fooddd, Beverage& Tobacco)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 432524.0,
+    "principal": null,
+    "market_value": 43425495.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Sanofffi SA( Pharmaceuticals, Biotechnology& Life Sciences)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 435027.0,
+    "principal": null,
+    "market_value": 42977651.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Schneider Electric SE( Capital Goods)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 123988.0,
+    "principal": null,
+    "market_value": 28270929.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Shell PLC( Energy)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 1955779.0,
+    "principal": null,
+    "market_value": 69525249.0
+  },
+  {
+    "fund_name": "GOLDMAN SACHS INTERNATIONAL EQUITY INCOME FUND",
+    "report_date": "April 30, 2024",
+    "security_name": "Swiss Re AG( Insurance)",
+    "security_type": "Common Stock",
+    "country_iso3": "USA",
+    "sector": null,
+    "shares": 225456.0,
+    "principal": null,
+    "market_value": 1378552253.0
   }
 ]

@@ -22,6 +22,11 @@ def main() -> None:
     )
     parser.add_argument("--out-json", type=Path, help="Optional explicit output JSON file path")
     parser.add_argument("--out-csv", type=Path, help="Optional explicit output CSV file path")
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Print verbose diagnostics (selected pages, layout config, etc.) during extraction.",
+    )
     args = parser.parse_args()
 
     pdf = load_pdf(args.pdf)
@@ -95,7 +100,7 @@ def main() -> None:
     else:
         args.out_csv.parent.mkdir(parents=True, exist_ok=True)
 
-    holdings = extract_with_layout(pdf, cfg, fund_name=fund_name, report_date=report_date)
+    holdings = extract_with_layout(pdf, cfg, fund_name=fund_name, report_date=report_date, verbose=args.verbose)
 
     data = [h.__dict__ for h in holdings]
     args.out_json.write_text(json.dumps(data, indent=2))
