@@ -47,6 +47,23 @@ Main components:
 8. Export & Integration
 9. AI-Assisted Config Generation
 
+Architecture decisions & infrastructure choices:
+
+- **Application architecture**:
+  - Start with a **single monolithic service** (one deployable app) that exposes all APIs (ingestion, extraction orchestration, config management, validation, review) and runs background jobs.
+  - Rationale: this is primarily an internal/administrative tool with low expected concurrency, so a monolith minimizes operational complexity and hosting cost while still being easy to modularize internally.
+- **Compute**:
+  - Deploy the monolith on a single **DigitalOcean droplet** (or similar low-cost VPS), sized to handle batch workloads (CPU-optimized if OCR and AI are used heavily).
+  - Horizontally scale later (multiple droplets behind a load balancer) only if usage or SLAs require it.
+- **Database**:
+  - Use **PostgreSQL** as the primary datastore for reports, configs, holdings, validation results, and audit logs.
+  - To minimize cost initially, run PostgreSQL on the same droplet (with regular backups); if reliability needs increase, migrate to a low-tier managed PostgreSQL offering.
+- **Object storage**:
+  - Store raw PDFs and derived artifacts (e.g., OCR text snapshots) in a low-cost object store such as **Backblaze B2** (or similar) for cheaper per-GB pricing than major cloud providers.
+  - Keep only URLs/keys in PostgreSQL, never large blobs.
+- **Asynchronous processing**:
+  - Use a lightweight queue (e.g., Redis-backed worker or a simple job table in PostgreSQL) to schedule extraction and validation jobs without introducing extra infrastructure cost.
+
 
 ## 3. Component Design
 
