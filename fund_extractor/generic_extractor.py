@@ -28,11 +28,30 @@ def _parse_number(raw: str) -> float | None:
 
 
 def _normalize_name(name: str) -> str:
-    # Insert spaces before capital letters when preceded by a non-space, non-capital
-    name = re.sub(r"(?<=[^\sA-Z,])(?=[A-Z])", " ", name)
-    # Space after comma
-    name = re.sub(r",(?=[A-Za-z])", ", ", name)
-    # Collapse multiple spaces
+    """
+    Normalize security names:
+    - Insert spaces between lower-case and upper-case transitions (AssaAbloy -> Assa Abloy)
+    - Normalize spaces around commas, ampersands, and parentheses.
+    """
+    if not name:
+        return ""
+
+    # Space between lowercase (including accented) and uppercase letters
+    name = re.sub(r"(?<=[a-zà-ÿ])(?=[A-Z])", " ", name)
+
+    # Ensure a space after comma if missing
+    name = re.sub(r",(?=\S)", ", ", name)
+
+    # Normalize spaces around '&'
+    name = re.sub(r"\s*&\s*", " & ", name)
+
+    # Remove spaces right after '('
+    name = re.sub(r"\(\s+", "(", name)
+
+    # Ensure space before '(' when attached to a word (but not after a hyphen)
+    name = re.sub(r"(?<=[A-Za-z])\(", " (", name)
+
+    # Collapse multiple spaces and trim
     name = re.sub(r"\s{2,}", " ", name)
     return name.strip()
 
@@ -372,5 +391,6 @@ def extract_with_layout(
                     )
 
     return holdings
+
 
 
