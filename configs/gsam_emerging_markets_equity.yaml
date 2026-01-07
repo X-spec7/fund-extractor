@@ -3,8 +3,8 @@ fund_name_patterns:
   - "GOLDMAN\\s*SACHS\\s*EMERGING\\s*MARKETS\\s*EQUITY\\s*FUND"
 schedule_header: "Schedule of Investments"
 layout:
-  type: one_column_line_numeric
-  columns: 1
+  type: two_column_multiline_shares_first
+  columns: 2
   shares_token_index: 0
   value_token_index: 1
 instrument_headers:
@@ -17,6 +17,10 @@ stop_line_contains:
   - "%of"
   - "SectorName"
 noise_prefixes:
+  - "TOTAL COMMON STOCKS"
+  - "TOTALCOMMONSTOCKS"
+  - "Investment Company"
+  - "Shares Dividend Rate Value"
   - "TOTTTAL COMMON STOCKS"
   - "TOTTTALPREFERREDSTOCKS"
   - "TOTTTAL INVESTMENTS"
