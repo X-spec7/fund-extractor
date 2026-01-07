@@ -1,0 +1,35 @@
+```yaml
+id: blackrockinternationalfund
+fund_name_patterns:
+  - "BlackRock\\s*International\\s*Fund"
+schedule_header: "Schedule of Investments"
+layout:
+  type: two_column_line_numeric
+  columns: 2
+  shares_token_index: 0
+  value_token_index: 1
+instrument_headers:
+  CommonStocks: "Common Stock"
+stop_line_prefixes:
+  - "TotalLong-TermInvestments"
+  - "TotalLong- TermInvestments"
+  - "Short-TermSecurities"
+  - "Affiliates"
+  - "FairValueHierarchy"
+  - "TotalInvestments"
+  - "OtherAssetsLessLiabilities"
+  - "NetAssets"
+stop_line_contains: []
+noise_prefixes:
+  - "(Cost:$"
+  - "( Cost:$"
+  - "Shares,"
+  - "AffiliatedIssuer"
+  - "InstitutionalShares"
+  - "Level"
+  - "BNM"
+  - "• Level"
+  - "MoneyMarketFunds"
+  - "BlackRockLiquidityFunds"
+  - "Investment Company"
+```

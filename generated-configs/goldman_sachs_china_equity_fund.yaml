@@ -1,0 +1,32 @@
+```yaml
+id: goldman_sachs_china_equity_fund
+fund_name_patterns:
+  - "Goldman\\s*Sachs\\s*China\\s*Equity\\s*Fund"
+schedule_header: "Schedule of Investments"
+layout:
+  type: two_column_multiline_shares_first
+  columns: 2
+  shares_token_index: 0
+  value_token_index: 2
+instrument_headers:
+  CommonStocks: "Common Stock"
+stop_line_prefixes:
+  - "TOTAL COMMON STOCKS"
+  - "TOTTTALCOMMONSTOCKS"
+  - "TOTTTALINVESTMENTS"
+  - "OTHER ASSETS IN EXCESS OF LIABILITIES"
+  - "NET ASSETS"
+stop_line_contains:
+  - "%of"
+  - "SectorName"
+noise_prefixes:
+  - "Shares Dividend Rate Value"
+  - "Shares Description Value"
+  - "Shares Description VVValue"
+  - "Shares Description VVValue"
+  - "Shares Description Value"
+  - "InvestmentCompany"
+  - "Investment Company"
+  - "The accompanying notes"
+  - "**Endswapsheader**"
+```
